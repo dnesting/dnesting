@@ -10,8 +10,8 @@ public policy.
 
 ## Qualifications
 
-- Can understand and troubleshoot complex systems (Google, healthcare.gov), at all layers of the stack
-- Can design, build, and support systems that are available, scalable, and secure against common threats.
+- Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
+- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats.
 - Can lead teams of engineers
 - Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
 
@@ -28,7 +28,7 @@ public policy.
 of interviews for engineering and lead roles
 - Data analytics and other engineering for the above goals
 
-**Engineer** from 2014-present.  Projects included:
+**Site Reliability Engineer** from 2014-present.  Projects included:
 
 - Healthcare.gov, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
 while also advising the CTO and Secretary of HHS
@@ -42,6 +42,10 @@ problems and proving the ability of the service to scale
 consultation, and other policy work
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
 for thousands of vulnerabilities in a government system
+- Security Engineering, performing code reviews, advice on prioritization and mitigation.
+- Advised on professional and personal infosec threats to projects
+and USDS employees, and conducted bi-monthly security training and
+workshops for USDS.
 
 TS/SCI
 
