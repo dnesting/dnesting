@@ -6,13 +6,13 @@ Washington, DC
 ## Who I Am
 
 I enjoy edge cases and thinking at scale.  My interests range from hacking electronics to
-public policy.
+public policy to leadership.
 
 ## Qualifications
 
-- Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
-- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats.
 - Can lead teams of engineers
+- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats.
+- Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
 - Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
 
 ## Experience
@@ -23,12 +23,13 @@ public policy.
 
 - Mentored a community of ~50 engineers spread across several agencies
 - Supervised work assignments for 25
-- Recruiting, speaking at round tables, conferences
+- Represented engineering and IT to agency and White House leadership
+- Recruiting, speaking at round tables and conferences
 - Helped define and continue to maintain the engineering hiring process, and have conducted dozens
 of interviews for engineering and lead roles
 - Data analytics and other engineering for the above goals
 
-**Site Reliability Engineer** from 2014-present.  Projects included:
+**Site Reliability and Security Engineer** from 2014-present.  Projects included:
 
 - Healthcare.gov, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
 while also advising the CTO and Secretary of HHS
@@ -43,6 +44,7 @@ consultation, and other policy work
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
 for thousands of vulnerabilities in a government system
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
+- Various projects, researching and advising on security threats and capabilities of nation-state adversaries
 - Advised on professional and personal infosec threats to projects
 and USDS employees, and conducted bi-monthly security training and
 workshops for USDS.
