@@ -10,16 +10,30 @@ public policy to leadership.
 
 ## Qualifications
 
-- Can lead teams of engineers
-- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats.
+- Can lead teams
+- Good familiarity with CIO organizations in the federal government, procurement, and relevant law
+- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats
 - Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
 - Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
 
 ## Experience
 
+### US Office of Personnel Management
+
+**Deputy CIO** from 2019-present:
+
+- Stabilization of high-value assets.  Led a mainframe modernization activity to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure.
+- COVID-19 response.  Introduced the agency to modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended majority-telework.
+- Served as technology partner to the OPM CIO, focused on investigating the technology landscape at the agency and advising the CIO organization on risk, modern practices, and engineering
+- Led a mainframe modernization effort to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure
+- Led a deep dive into call center issues resulting in disasterous customer experience, ultimately resulting in the formation of a cross-disciplinary team of 40 people all working on a cross-section of the problem from a process, self-help, and technology platform perspective.  Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort.
+- One time I had to build a Prometheus-based monitoring system from scratch in order to effectively troubleshoot a problem for which we had no visibility.
+- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it.
+- Generally advise on cybersecurity
+
 ### US Digital Service
 
-**Director of Engineering** from 2017-present:
+**Director of Engineering** from 2017-2019:
 
 - Mentored a community of ~50 engineers spread across several agencies
 - Supervised work assignments for 25
@@ -29,7 +43,7 @@ public policy to leadership.
 of interviews for engineering and lead roles
 - Data analytics and other engineering for the above goals
 
-**Site Reliability and Security Engineer** from 2014-present.  Projects included:
+**Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
 - Healthcare.gov, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
 while also advising the CTO and Secretary of HHS
