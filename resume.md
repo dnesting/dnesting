@@ -18,9 +18,16 @@ public policy to leadership.
 
 ## Experience
 
+### Rebellion Defense
+
+**Site Reliability Engineering Manager** from 2021-present
+
+- Design and build cloud, on-premise, and novel infrastructure for Rebellion projects
+- Improve resiliency, maintainability, and operational support
+
 ### US Office of Personnel Management
 
-**Deputy CIO** from 2019-present:
+**Deputy CIO** from 2019-2021:
 
 - Stabilization of high-value assets.  Led a mainframe modernization activity to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure.
 - COVID-19 response.  Introduced the agency to modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended majority-telework.
