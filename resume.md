@@ -12,7 +12,7 @@ public policy to leadership.
 
 - Can lead teams
 - Good familiarity with CIO organizations in the federal government, procurement, and relevant law
-- Can design, build, and support large-scale systems that are available, scalable, and secure against common threats
+- Can design, build, and support modern large-scale systems that are available, scalable, and secure against common threats
 - Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
 - Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
 
@@ -24,6 +24,7 @@ public policy to leadership.
 
 - Design and build cloud, on-premise, and novel infrastructure for Rebellion projects
 - Improve resiliency, maintainability, and operational support
+- Kubernetes, GPUs, Go
 
 ### US Office of Personnel Management
 
