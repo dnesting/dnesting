@@ -26,6 +26,8 @@ public policy to leadership.
 - Improve resiliency, maintainability, and operational support
 - Kubernetes, GPUs, Go
 
+TS/SCI
+
 ### US Office of Personnel Management
 
 **Deputy CIO** from 2019-2021:
