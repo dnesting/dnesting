@@ -20,7 +20,7 @@ public policy to leadership.
 
 ### Rebellion Defense
 
-**Site Reliability Engineering Manager** from 2021-present
+**Site Reliability Engineering Manager** from 2021-2023:
 
 - Design and build cloud, on-premise, and novel infrastructure for Rebellion projects
 - Improve resiliency, maintainability, and operational support
