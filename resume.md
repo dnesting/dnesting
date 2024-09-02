@@ -5,30 +5,47 @@ Washington, DC
 
 ## Who I Am
 
-I enjoy edge cases and thinking at scale.  My interests range from hacking electronics to
-public policy to leadership.
+I am an engineering leader, with an emphasis in complex systems, resiliency, and solving problems.
+My superpowers include working with empathy, communicating with non-technical leaders, and adapting.
+I enjoy edge cases, adversarial thinking, and being hands-on.  My interests range from hacking electronics to
+public policy.
 
 ## Qualifications
 
-- Can lead teams
-- Good familiarity with CIO organizations in the federal government, procurement, and relevant law
+- Can effectively lead small and large teams, both short-term task forces and long-term product delivery
+- Has run a CIO organization in the federal government, and is familiar with procurement, and relevant law
 - Can design, build, and support modern large-scale systems that are available, scalable, and secure against common threats
 - Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
 - Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
 
+Overview of active security clearances available on request.
+
 ## Experience
 
-### Rebellion Defense
+### The White House, Office of Management and Budget (OMB)
+### [Office of the Federal CIO](https://www.whitehouse.gov/omb/management/ofcio/)
 
-**Site Reliability Engineering Manager** from 2021-2023:
+**Cybersecurity Specialist** from 2024-present:
 
-- Design and build cloud, on-premise, and novel infrastructure for Rebellion projects
+- Senior advisor to the Federal CIO
+- Policy analyst for AI, Cybersecurity, and IT Modernization
+- De facto Chief Artificial Intelligence Officer (CAIO) at OMB
+- Technology advisor to the OMB CIO
+- Led a Technology Modernization Fund (TMF) discovery sprint to identify IT modernization activities
+
+https://www.whitehouse.gov/omb/management/ofcio/
+
+### [Rebellion Defense](https://rebelliondefense.com/)
+
+**Infrastructure Team Manager** and **Site Reliability Engineer** from 2021-2023:
+
+- Design and build cloud (AWS, Kubernetes), on-premise, AI, and novel infrastructure for Rebellion projects
 - Improve resiliency, maintainability, and operational support
 - Kubernetes, GPUs, Go
 
-TS/SCI
+https://rebelliondefense.com/
 
-### US Office of Personnel Management
+### [US Office of Personnel Management](https://www.opm.gov/)
 
 **Deputy CIO** from 2019-2021:
 
@@ -41,7 +58,10 @@ TS/SCI
 - One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it.
 - Generally advise on cybersecurity
 
-### US Digital Service
+https://www.opm.gov/
+
+### The White House, Office of Management and Budget (OMB)
+### [US Digital Service](https://usds.gov/)
 
 **Director of Engineering** from 2017-2019:
 
@@ -55,14 +75,14 @@ of interviews for engineering and lead roles
 
 **Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
-- Healthcare.gov, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
+- Healthcare.gov with HHS/CMS, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
 while also advising the CTO and Secretary of HHS
-- Login.gov, as the devops lead, improving the infrastructure for login.gov as it launched and grew,
+- Login.gov with GSA, as the devops lead, improving the infrastructure for login.gov as it launched and grew,
 with an emphasis on availability and security
 - Refugees, with the Department of State, improving the case management system
 - College Scorecard with the Department of Education, performing data mapping, identifying and fixing critical performance
 problems and proving the ability of the service to scale
-- Internal tools, record retention pipeline, group chat
+- Internal tools with US Digital Service, including building collaboration and records management tools
 - Rapid-response to incidents at multiple agencies, deep dives at agencies such as the Army, State, and DOJ,
 consultation, and other policy work
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
@@ -70,12 +90,12 @@ for thousands of vulnerabilities in a government system
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
 - Various projects, researching and advising on security threats and capabilities of nation-state adversaries
 - Advised on professional and personal infosec threats to projects
-and USDS employees, and conducted bi-monthly security training and
+and USDS employees, and built and conducted bi-monthly security training and
 workshops for USDS.
 
-TS/SCI
+https://usds.gov/
 
-### Google
+### [Google](https://about.google/)
 
 **Site Reliability Engineer** from 2007-2014 (7.5 years), on the logs infrastructure team, managing
 all layers of the logs infrastructure, including hardware, OS, and service.  Supported data volumes
@@ -94,7 +114,9 @@ analysis users
 - Participated in efforts to reduce privileges and increase security of the infrastructure
 - SRE hiring, conducting hundreds of engineering interviews
 
-### AT&T
+https://about.google/
+
+### [AT&T](https://www.att.com/)
 
 **Technical Architect** and similar roles, from 1999-2007 (8 years), on the production support team:
 
@@ -103,7 +125,9 @@ analysis users
 automate our work, and was the only team member who could meaningfully engage with the dev teams
 to troubleshoot problems
 - Significant role with AT&T's "shadow IT", spending a lot of time trying to make software engineering
-suck less, given AT&T's engineering- and innovation-hostile corporate environment.
+suck less, given AT&T's engineering- and innovation-hostile corporate culture.
+
+https://www.att.com/
 
 ### Texas Networking, Inc.
 
@@ -112,7 +136,7 @@ small/startup regional ISP.
 
 - Technical helpdesk, troubleshooting internet, networking, and client system problems
 - Customer-facing documentation
-- Writing small tools and internal servers to automate tasks, monitor infrastructure, etc.
+- Writing small tools and internal servers to automate tasks and monitor infrastructure
 
 ## Education
 
