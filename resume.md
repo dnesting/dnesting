@@ -75,16 +75,8 @@ of interviews for engineering and lead roles
 
 **Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
-- Healthcare.gov with HHS/CMS, on the SRE team, acting in shifts as incident commander and lead troubleshooter,
-while also advising the CTO and Secretary of HHS
-- Login.gov with GSA, as the devops lead, improving the infrastructure for login.gov as it launched and grew,
-with an emphasis on availability and security
-- Refugees, with the Department of State, improving the case management system
-- College Scorecard with the Department of Education, performing data mapping, identifying and fixing critical performance
-problems and proving the ability of the service to scale
+- Multiple rapid response and consultation efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
 - Internal tools with US Digital Service, including building collaboration and records management tools
-- Rapid-response to incidents at multiple agencies, deep dives at agencies such as the Army, State, and DOJ,
-consultation, and other policy work
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
 for thousands of vulnerabilities in a government system
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
