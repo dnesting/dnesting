@@ -25,13 +25,13 @@ Overview of active security clearances available on request.
 ### The White House, Office of Management and Budget (OMB)
 ### [Office of the Federal CIO](https://www.whitehouse.gov/omb/management/ofcio/)
 
-**Cybersecurity Specialist** from 2024-present:
+**Cybersecurity Specialist** from 2024-2025:
 
 - Senior advisor to the Federal CIO
 - Policy analyst for AI, Cybersecurity, and IT Modernization
-- De facto Chief Artificial Intelligence Officer (CAIO) at OMB
+- Artificial Intelligence Lead at OMB
 - Technology advisor to the OMB CIO
-- Led a Technology Modernization Fund (TMF) discovery sprint to identify IT modernization activities
+- Led a Technology Modernization Fund (TMF) discovery sprint to identify IT modernization proposals
 
 https://www.whitehouse.gov/omb/management/ofcio/
 
@@ -52,7 +52,6 @@ https://rebelliondefense.com/
 - Stabilization of high-value assets.  Led a mainframe modernization activity to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure.
 - COVID-19 response.  Introduced the agency to modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended majority-telework.
 - Served as technology partner to the OPM CIO, focused on investigating the technology landscape at the agency and advising the CIO organization on risk, modern practices, and engineering
-- Led a mainframe modernization effort to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure
 - Led a deep dive into call center issues resulting in disasterous customer experience, ultimately resulting in the formation of a cross-disciplinary team of 40 people all working on a cross-section of the problem from a process, self-help, and technology platform perspective.  Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort.
 - One time I had to build a Prometheus-based monitoring system from scratch in order to effectively troubleshoot a problem for which we had no visibility.
 - One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it.
@@ -70,12 +69,12 @@ https://www.opm.gov/
 - Represented engineering and IT to agency and White House leadership
 - Recruiting, speaking at round tables and conferences
 - Helped define and continue to maintain the engineering hiring process, and have conducted dozens
-of interviews for engineering and lead roles
+of interviews for engineering and lead roles inside and outside of USDS
 - Data analytics and other engineering for the above goals
 
 **Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
-- Multiple rapid response and consultation efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
+- Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
 - Internal tools with US Digital Service, including building collaboration and records management tools
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
 for thousands of vulnerabilities in a government system
@@ -90,7 +89,8 @@ https://usds.gov/
 ### [Google](https://about.google/)
 
 **Site Reliability Engineer** from 2007-2014 (7.5 years), on the logs infrastructure team, managing
-all layers of the logs infrastructure, including hardware, OS, and service.  Supported data volumes
+all layers of the logs infrastructure, including hardware, OS, and service, and supporting Google's
+legal and privacy teams.  Supported data volumes
 of "many terabytes" and the workload of thousands of analysis users consuming "many thousands" of
 CPU cores.  Projects included:
 
@@ -103,7 +103,7 @@ hardware faults (bad CPUs, RAM), misbehaving users, etc.
 analysis users
 - Built a system to manage large cross-data center data migration efforts (at the petabyte scale)
 - Built a system to preserve/segregate data subject to litigation
-- Participated in efforts to reduce privileges and increase security of the infrastructure
+- Participated in efforts to reduce and segregate privileges and increase security of the infrastructure
 - SRE hiring, conducting hundreds of engineering interviews
 
 https://about.google/
