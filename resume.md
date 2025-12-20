@@ -52,10 +52,12 @@ Rehabilitated the Observatory's telescope, which had not seen light in 15 years.
 - Led a Technology Modernization Fund Discovery Sprint
 - Fired by DOGE on the last day of my probationary period
 
-### Infrastructure Team Manager, [Rebellion Defense](https://rebelliondefense.com/), 2021-2023
+### SRE and Infrastructure Team Manager, [Rebellion Defense](https://rebelliondefense.com/), 2021-2023
 
-- Design and build cloud (AWS, Kubernetes), on-premise, AI, and novel infrastructure for Rebellion projects
-- Managed a team of ~12 engineers, a mix of SRE and SWE
+Rebellion Defense is an AI-focused defense startup.
+
+- Designed and built cloud (AWS, Kubernetes) infrastructure, tooling (Terraform) and software, and AI and novel infrastructure for Rebellion projects
+- Managed a team of ~12 Site Reliability Engineers and Software Engineers
 - Improve resiliency, maintainability, and operational support
 - Kubernetes, GPUs, Go
 
@@ -74,25 +76,20 @@ Rehabilitated the Observatory's telescope, which had not seen light in 15 years.
 
 **Director of Engineering** from 2017-2019:
 
-- Mentored a community of ~50 engineers spread across several agencies
+- Mentored a community of ~50 SREs, SWEs, and Data Engineers spread across several agencies
 - Supervised work assignments for 25
 - Represented engineering and IT to agency and White House leadership
 - Recruiting, speaking at round tables and conferences
-- Helped define and continue to maintain the engineering hiring process, and have conducted dozens
-of interviews for engineering and lead roles inside and outside of USDS
-- Data analytics and other engineering for the above goals
+- Helped build the engineering hiring process
 
 **Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
 - Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
-- Internal tools with US Digital Service, including building collaboration and records management tools
-- One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes
-for thousands of vulnerabilities in a government system
+- Identified, build, and managed collaboration and records tools
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
+- One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes for thousands of vulnerabilities in a government system
 - Various projects, researching and advising on security threats and capabilities of nation-state adversaries
-- Advised on professional and personal infosec threats to projects
-and USDS employees, and built and conducted bi-monthly security training and
-workshops for USDS.
+- Advised on professional and personal infosec threats to projects and USDS employees, and built and conducted bi-monthly security training and workshops for USDS.
 
 ### [Google](https://about.google/)
 
