@@ -12,42 +12,54 @@ public policy.
 
 ## Qualifications
 
-- Can effectively lead small and large teams, both short-term task forces and long-term product delivery
-- Has run a CIO organization in the federal government, and is familiar with procurement, and relevant law
+- Can effectively lead small task forces and large product delivery teams
+- Ran a CIO organization in the federal government, procurement, law
 - Can design, build, and support modern large-scale systems that are available, scalable, and secure against common threats
-- Can understand and troubleshoot complex information systems (Google, healthcare.gov), at all layers of the stack
-- Can write efficient and readable code (Go and Python are my go-tos, but also C++, Java, bash)
+- Can understand and troubleshoot complex systems at all layers of the stack
+- Can write efficient and readable code (Go, Python, others)
 
-Overview of active security clearances available on request.
+Overview of security clearances available on request.
 
 ## Experience
 
+### Self-Employed, March 2025 - Present
+
+- Multiple speculative Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration
+- Secure network design and deployment for a 30-unit residential building
+- Guest Lecturer on Privacy Engineering for the Vanderbilt Policy Accelerator
+- Additional consulting engagements in New York City and Washington, DC
+
+**Expert Witness, Electronic Frontier Foundation (EFF), May 2025**
+
+- Consulted on IT modernization, cybersecurity, and privacy
+- Testified as an Expert Witness at the US District Court for the Southern District of New York
+
+**Vega-Bray Observatory Rehabilitation, March 2025**
+
+Rehabilitated the Observatory's telescope, which had not seen light in 15 years.
+
+- Reverse engineered the dome control system, delivered schematics and run book
+- Reverse engineered the telescope's drive and tracking system
+- Built a custom hardware control system, directly interfacing with the telescope's hardware
+- Wrote custom drive and tracking software, accepting inputs from a hand controller
+
+### AI and Cybersecurity Advisor to the Federal CIO, 2024 - 2025
 ### The White House, Office of Management and Budget (OMB)
-### [Office of the Federal CIO](https://www.whitehouse.gov/omb/management/ofcio/)
 
-**Cybersecurity Specialist** from 2024-2025:
+- AI, Cybersecurity, and Technology Modernization policy and implementation advisor to the Federal CIO
+- Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams
+- Technology Advisor to the OMB Chief Information Officer on AI, data, cybersecurity, and modernization
+- Led a Technology Modernization Fund Discovery Sprint
+- Fired by DOGE on the last day of my probationary period
 
-- Senior advisor to the Federal CIO
-- Policy analyst for AI, Cybersecurity, and IT Modernization
-- Artificial Intelligence Lead at OMB
-- Technology advisor to the OMB CIO
-- Led a Technology Modernization Fund (TMF) discovery sprint to identify IT modernization proposals
-
-https://www.whitehouse.gov/omb/management/ofcio/
-
-### [Rebellion Defense](https://rebelliondefense.com/)
-
-**Infrastructure Team Manager** and **Site Reliability Engineer** from 2021-2023:
+### Infrastructure Team Manager, [Rebellion Defense](https://rebelliondefense.com/), 2021-2023
 
 - Design and build cloud (AWS, Kubernetes), on-premise, AI, and novel infrastructure for Rebellion projects
+- Managed a team of ~12 engineers, a mix of SRE and SWE
 - Improve resiliency, maintainability, and operational support
 - Kubernetes, GPUs, Go
 
-https://rebelliondefense.com/
-
-### [US Office of Personnel Management](https://www.opm.gov/)
-
-**Deputy CIO** from 2019-2021:
+### Deputy CIO, [US Office of Personnel Management](https://www.opm.gov/) 2019-2021
 
 - Stabilization of high-value assets.  Led a mainframe modernization activity to improve OPM's disaster preparedness and manage risk associated with multiple single points of failure.
 - COVID-19 response.  Introduced the agency to modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended majority-telework.
@@ -57,10 +69,8 @@ https://rebelliondefense.com/
 - One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it.
 - Generally advise on cybersecurity
 
-https://www.opm.gov/
-
+### [US Digital Service](https://usds.gov/), 2014-2019
 ### The White House, Office of Management and Budget (OMB)
-### [US Digital Service](https://usds.gov/)
 
 **Director of Engineering** from 2017-2019:
 
@@ -84,51 +94,22 @@ for thousands of vulnerabilities in a government system
 and USDS employees, and built and conducted bi-monthly security training and
 workshops for USDS.
 
-https://usds.gov/
-
 ### [Google](https://about.google/)
 
 **Site Reliability Engineer** from 2007-2014 (7.5 years), on the logs infrastructure team, managing
 all layers of the logs infrastructure, including hardware, OS, and service, and supporting Google's
-legal and privacy teams.  Supported data volumes
-of "many terabytes" and the workload of thousands of analysis users consuming "many thousands" of
-CPU cores.  Projects included:
-
-- 24x7 on-call responsibilities, addressing problems ranging from network issues, failed roll-outs,
-hardware faults (bad CPUs, RAM), misbehaving users, etc.
-- Maintain and iterate on systems that ensure data integrity (strong assurances against tampering)
-- Maintain and iterate on systems that ensure privacy commitments to our users were being met
-(anonymization, retention limits, user-requested deletion, etc.)
-- Maintain and iterate on systems that controlled access and made data available to authorized
-analysis users
-- Built a system to manage large cross-data center data migration efforts (at the petabyte scale)
-- Built a system to preserve/segregate data subject to litigation
-- Participated in efforts to reduce and segregate privileges and increase security of the infrastructure
-- SRE hiring, conducting hundreds of engineering interviews
-
-https://about.google/
+legal and privacy teams.  Projects included on-call, data integrity, privacy, access control, data
+availability, large-scale data migration, security, and hiring.
 
 ### [AT&T](https://www.att.com/)
 
-**Technical Architect** and similar roles, from 1999-2007 (8 years), on the production support team:
-
-- Technical lead on the 24x7 operations team supporting www.att.com and similar sites
-- Sole team member with development background, so I wrote a lot of tools and software to help
-automate our work, and was the only team member who could meaningfully engage with the dev teams
-to troubleshoot problems
-- Significant role with AT&T's "shadow IT", spending a lot of time trying to make software engineering
-suck less, given AT&T's engineering- and innovation-hostile corporate culture.
-
-https://www.att.com/
+**Technical Architect** and similar roles, from 1999-2007 (8 years), as a technical lead supporting
+www.att.com and similar sites. Shifted team from a traditional production operations team to a DevOps model.
 
 ### Texas Networking, Inc.
 
 **Engineer**, from 1995-1999 (approx.), as a member of the engineering staff.  This was a
 small/startup regional ISP.
-
-- Technical helpdesk, troubleshooting internet, networking, and client system problems
-- Customer-facing documentation
-- Writing small tools and internal servers to automate tasks and monitor infrastructure
 
 ## Education
 
