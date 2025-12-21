@@ -25,6 +25,7 @@ Overview of security clearances available on request.
 ### Self-Employed, March 2025 - Present
 
 - Multiple speculative Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration
+- Home Kubernetes lab
 - Secure network design and deployment for a 30-unit residential building
 - Guest Lecturer on Privacy Engineering for the Vanderbilt Policy Accelerator
 - Additional consulting engagements in New York City and Washington, DC
@@ -50,7 +51,7 @@ Rehabilitated the Observatory's telescope, which had not seen light in 15 years.
 - Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams
 - Technology Advisor to the OMB Chief Information Officer on AI, data, cybersecurity, and modernization
 - Led a Technology Modernization Fund Discovery Sprint
-- Fired by DOGE on the last day of my probationary period
+- Fired by DOGE
 
 ### SRE and Infrastructure Team Manager, [Rebellion Defense](https://rebelliondefense.com/), 2021-2023
 
