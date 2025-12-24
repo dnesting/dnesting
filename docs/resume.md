@@ -112,3 +112,5 @@ small/startup regional ISP.
 ## Education
 
 Texas A&M, Computer Engineering major, 1998
+
+No AI was used in the production of this resume.
