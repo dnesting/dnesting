@@ -1,16 +1,15 @@
 # David Nesting
 
-david.nesting@gmail.com  
-Washington, DC
+david.nesting@gmail.com, Washington, DC
 
-I am an engineering leader, with an emphasis in complex systems, resiliency, and solving problems.
+I am an engineering leader, with an emphasis in complex systems, reliability and resiliency, and solving problems.
 My superpowers include working with empathy, communicating with non-technical leaders, and adapting.
 I enjoy edge cases, adversarial thinking, and being hands-on.  My interests range from hacking electronics to
 public policy.
 
 ## Qualifications
 
-- Can effectively lead small task forces and large product delivery teams
+- Can effectively lead small incident response task forces and large product delivery teams
 - Can understand, build, and troubleshoot complex systems at all layers of the stack
 - Can write efficient and readable code (Go, Python, others)
 
@@ -21,8 +20,8 @@ Overview of security clearances available on request.
 ### Self-Employed, March 2025 - Present
 
 - Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration
-- Secure network design and deployment for a 30-unit residential building
-- Guest Lecturer on Privacy Engineering for the Vanderbilt Policy Accelerator
+- Reliable and secure network design and deployment for a 30-unit residential building
+- Guest Lecturer on Resiliency and Privacy Engineering for the Vanderbilt Policy Accelerator
 
 **Expert Witness, Electronic Frontier Foundation (EFF), April-May 2025**
 
@@ -31,37 +30,39 @@ Overview of security clearances available on request.
 
 **Vega-Bray Observatory Rehabilitation, March 2025**
 
-- Rehabilitated the Observatory's telescope, which had not seen light in 15 years.
+- Rehabilitated the Observatory's telescope, which had not seen light in 15 years
 - Reverse engineered the dome control system and the telescope's drive and tracking system
-- Built a custom hardware control system, and wrote custom drive and tracking software.
+- Built a custom hardware control system, and wrote custom drive and tracking software
 
 ### Office of the Federal CIO, The White House (OMB), 2024-2025
 
 **AI and Cybersecurity Advisor to the Federal CIO**
 
-- AI, Cybersecurity, and Technology Modernization policy and implementation advisor to the Federal CIO
+- AI, Cybersecurity, Reliability and Resiliency, and Technology Modernization policy and implementation advisor to the Federal CIO
 - Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams, built on-premise AI proofs of concept
-- Technology Advisor to the OMB Chief Information Officer on AI, data, cybersecurity, and modernization
-- Led a Technology Modernization Fund Discovery Sprint
+- Technology Advisor to the OMB Chief Information Officer on AI, SRE/operations, data, cybersecurity, and modernization
+- Led a cross-functional Technology Modernization Fund discovery effort and co-authored a $~100M modernization proposal
 
 ### Rebellion Defense, 2021-2023
 
 **SRE and Infrastructure Team Manager**
 
 - Ran the Site Reliability Engineering and Infrastructure team at Rebellion Defense, a startup building AI-powered defense software.
-- 12 SREs and SWEs.
-- Platform was based on AWS, Kubernetes, and novel infrastructure.
+- 12 SREs and SWEs
+- Platform was based on AWS, Kubernetes, and novel infrastructure
+- This was a highly hands-on role, with significant individual contribution
 
 ### US Office of Personnel Management, 2019-2021
 
 **Deputy Chief Information Officer**
 
-- Led a mainframe modernization activity to improve OPM's resiliency against single points of failure.
-- Introduced modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended COVID-19 telework.
+- Managed a ~750-person federal CIO organization with a $100M/year budget
+- Led a mainframe modernization activity to improve OPM's resiliency against single points of failure
+- Introduced modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended COVID-19 telework
 - Advised the CIO on security, risk, modern practices, resiliency, and engineering
-- Led a deep dive into call center issues resulting in disasterous customer experience. Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort.
-- One time I had to build a Prometheus-based monitoring system from scratch in order to effectively troubleshoot a problem for which we had no visibility.
-- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it.
+- Led a deep dive into call center issues resulting in disasterous customer experience. Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort
+- One time I had to build a Prometheus-based monitoring system from scratch in order to effectively troubleshoot a problem for which we had no visibility
+- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it
 
 ### US Digital Service, The White House (OMB), 2014-2019
 
@@ -78,7 +79,7 @@ Overview of security clearances available on request.
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
 - One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes for thousands of vulnerabilities in a government system
 - Various projects, researching and advising on security threats and capabilities of nation-state adversaries
-- Built and conducted bi-monthly security training and workshops for USDS.
+- Built and conducted bi-monthly security training and workshops for USDS
 
 ### Google
 
@@ -99,4 +100,4 @@ small/startup regional ISP.
 
 ## Education
 
-Texas A&M, Computer Engineering major, 1998
+Texas A&M, Computer Engineering, 1998
