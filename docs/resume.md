@@ -2,7 +2,7 @@
 
 david.nesting@gmail.com, Washington, DC
 
-I am an engineering leader, with an emphasis in complex systems, reliability and resiliency, and solving problems.
+I am an engineering leader, with an emphasis in complex systems, reliability, resiliency, security, and solving problems.
 My superpowers include working with empathy, communicating with non-technical leaders, and adapting.
 I enjoy edge cases, adversarial thinking, and being hands-on.  My interests range from hacking electronics to
 public policy.
@@ -11,6 +11,7 @@ public policy.
 
 - Can effectively lead small incident response task forces and large product delivery teams
 - Can understand, build, and troubleshoot complex systems at all layers of the stack
+- Can design and build complex systems with reliability, security, and privacy in mind
 - Can write efficient and readable code (Go, Python, others)
 
 Overview of security clearances available on request.
@@ -32,14 +33,15 @@ Overview of security clearances available on request.
 
 - Rehabilitated the Observatory's telescope, which had not seen light in 15 years
 - Reverse engineered the dome control system and the telescope's drive and tracking system
-- Built a custom hardware control system, and wrote custom drive and tracking software
+- Built a custom hardware control system for the telescope's stepper motors, and wrote custom drive and tracking software in C/C++ (Arduino)
 
 ### Office of the Federal CIO, The White House (OMB), 2024-2025
 
 **AI and Cybersecurity Advisor to the Federal CIO**
 
 - AI, Cybersecurity, Reliability and Resiliency, and Technology Modernization policy and implementation advisor to the Federal CIO
-- Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams, built on-premise AI proofs of concept
+- Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams
+- Built on-premise AI platform proof of concept and associated tooling, using Go and Kubernetes with NVIDIA H100 hardware.
 - Technology Advisor to the OMB Chief Information Officer on AI, SRE/operations, data, cybersecurity, and modernization
 - Led a cross-functional Technology Modernization Fund discovery effort and co-authored a $~100M modernization proposal
 
@@ -48,9 +50,9 @@ Overview of security clearances available on request.
 **SRE and Infrastructure Team Manager**
 
 - Ran the Site Reliability Engineering and Infrastructure team at Rebellion Defense, a startup building AI-powered defense software.
-- 12 SREs and SWEs
+- 12 SREs and SWEs, mostly senior/staff level
 - Platform was based on AWS, Kubernetes, and novel infrastructure
-- This was a highly hands-on role, with significant individual contribution
+- This was a highly hands-on role, with ~50% of my work as an individual contributor
 
 ### US Office of Personnel Management, 2019-2021
 
@@ -61,8 +63,8 @@ Overview of security clearances available on request.
 - Introduced modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended COVID-19 telework
 - Advised the CIO on security, risk, modern practices, resiliency, and engineering
 - Led a deep dive into call center issues resulting in disasterous customer experience. Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort
-- One time I had to build a Prometheus-based monitoring system from scratch in order to effectively troubleshoot a problem for which we had no visibility
-- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked and we needed the records out of it
+- One time I had to build a Prometheus-based monitoring system in Go in order to effectively troubleshoot a problem for which we had no visibility
+- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked, wrote an entirely new system in Go to allow users to access their data and extract records for archival
 
 ### US Digital Service, The White House (OMB), 2014-2019
 
@@ -77,9 +79,10 @@ Overview of security clearances available on request.
 
 - Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
-- One time I wrote an ASP parser and data flow analyzer to automatically generate code fixes for thousands of vulnerabilities in a government system
-- Various projects, researching and advising on security threats and capabilities of nation-state adversaries
+- One time I wrote a Go-based ASP parser and data flow analyzer to automatically generate code fixes for thousands of vulnerabilities in a government system
+- Various projects, researching and advising on security threats and capabilities of nation-state adversaries in classified and unclassified contexts
 - Built and conducted bi-monthly security training and workshops for USDS
+- Built and managed multiple internal tools in Python and Go, plus dozens of small software projects as part of my agency engagements
 
 ### Google
 
