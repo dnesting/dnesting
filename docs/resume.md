@@ -1,6 +1,7 @@
 # David Nesting
 
-david.nesting@gmail.com, Washington, DC
+david.nesting@gmail.com, Washington, DC  
+github.com/dnesting
 
 I am an engineering leader, with an emphasis in complex systems, reliability, resiliency, security, and solving problems.
 My superpowers include working with empathy, communicating with non-technical leaders, and adapting.
