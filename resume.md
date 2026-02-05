@@ -20,7 +20,7 @@ Overview of security clearances available on request.
 
 ### Self-Employed, March 2025 - Present
 
-- Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration
+- Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration. Primarily working in Go and Python.
 - Reliable and secure network design and deployment for a 30-unit residential building
 - Guest Lecturer on Resiliency and Privacy Engineering for the Vanderbilt Policy Accelerator
 
