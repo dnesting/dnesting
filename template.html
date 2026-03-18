@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>$title$</title>
+$for(author-meta)$
+<meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+<meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+<meta name="description" content="$description-meta$" />
+$endif$
+<link rel="stylesheet" href="/site.css">
+
+<main>
+  $body$
+</main>
+
+<footer>
+  <p><a href="mailto:david.nesting@gmail.com">david.nesting@gmail.com</a>
+  <p class="copyright">Copyright &copy; 2026 David Nesting
+</footer>
