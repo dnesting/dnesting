@@ -1,3 +1,7 @@
+---
+title: MacOS kalloc memory leak
+---
+
 # MacOS kalloc memory leak
 
 ## 2026-03-18
