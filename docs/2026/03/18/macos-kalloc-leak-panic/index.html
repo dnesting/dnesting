@@ -5,38 +5,32 @@
 <main>
   <h1 id="macos-kalloc-memory-leak">MacOS kalloc memory leak</h1>
   <h2 id="2026-03-18">2026-03-18</h2>
-  <p>I sometimes engage in what I will euphemistically call "abuse" of
-  my Macbook. In this case, I had about a dozen Ghostty tabs open with a
-  <code>watch</code> command running an expensive pipeline of shell,
-  Python, and Go, all while running periodic Docker builds and
-  vibe-coded Python integration tests.</p>
-  <p>And every few days, I wondered why my Macbook would <a
-  href="panic.txt">crash</a>.</p>
+  <p>I found a kernel memory leak in MacOS that's caused a dozen kernel
+  panics for me over the past year. But it requires some pretty
+  significant abuse of the system to trigger: roughly 20M
+  <code>exec</code> calls on shell scripts or Python running under
+  <code>pyenv</code>.</p>
+  <p>The <a href="panic.txt">panic</a> looks like:</p>
   <pre class="text"><code>panic(cpu 2 caller 0xfffffe00288c9d54): zalloc[3]: zone map exhausted while allocating from zone [data_shared.kalloc.1024], likely due to memory leak in zone [data_shared.kalloc.1024] (20G, 21157968 elements allocated) @zalloc.c:4534</code></pre>
-  <p>This same panic happened every week or so and seemed to correlate
-  with how much abuse I was engaging in. So I eventually decided to
-  figure it out. I found the <code>zprint</code> command, which let me
-  see the state of the kernel's zone allocator, and watched as the
-  number of <code>inuse</code> pages slowly climbed. A little math told
-  me it would reach 20G in a few days.</p>
+  <p>It took me the better part of a day to track down the exact
+  behavior that was causing this:</p>
   <ol type="1">
-  <li>I then one by one stopped the various things I was doing until I
-  found that a Python script running repeatedly in my <code>watch</code>
-  was the culprit.</li>
-  <li>But it wasn't just my script, it was <em>any</em> Python
-  script.</li>
-  <li>Actually, no, it was happening with <code>python --version</code>
-  too</li>
-  <li>Actually, it was any invocation of <code>pyenv</code>, since
-  that's what my <code>python</code> was pointing to.</li>
-  <li>Actually, it was <code>pyenv</code> doing an <code>exec</code> on
-  something else.</li>
-  <li>Actually, it was any shell script doing an <code>exec</code> on
-  something else.</li>
-  <li>Actually, it was anything doing an <code>exec</code> on a shell
-  script.</li>
+  <li>Figured out how to quantify the problem: <code>zprint</code> shows
+  you in-use allocations of the kernel's zone allocator, and
+  <code>data_shared.kalloc.1024</code> was the one that was mentioned in
+  the panic and I could see it was growing by O(100)/s.</li>
+  <li>Methodically stopped what I was doing in a dozen Ghostty terminal
+  panes until the numbers stopped climbing.</li>
+  <li>The biggest contributor was ~10 <code>watch</code> invocations
+  that were running a pipeline with a few Python scripts every few
+  seconds.</li>
+  <li>Reproduced by running those scripts in a 'stress' loop</li>
+  <li>Then realizing <code>python --version</code> did it too</li>
+  <li>Then realizing it was any <code>pyenv</code> invocation</li>
+  <li>Then narrowing it down to any <code>exec</code> of a shell
+  script</li>
   </ol>
-  <p>And, at last, I could reproduce the problem with:</p>
+  <p>At last, I could reproduce the problem with:</p>
   <div class="sourceCode" id="cb2"><pre
   class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -54,6 +48,8 @@
   <p>If it produces no output, your Mac may not have the same problem.
   Otherwise, invoke that with <code>20000000</code> and you'll have a
   kernel panic in a few minutes or hours.</p>
+  <p>And yes, the realization that I had invoked Python scripts 20M
+  times since my last crash caused me to refactor my life a bit.</p>
 </main>
 
 <footer>
