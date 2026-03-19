@@ -2,6 +2,8 @@
   --page-bg: #eee;
   --paper-bg: #fff;
   --code-bg: #eee;
+  --nav-bg: #ddd;
+  --nav-fg: #888;
   --border: #ccc;
   --footer-bg: #ddd;
   --footer-fg: #555;
@@ -64,6 +66,24 @@ main {
   box-shadow: var(--shadow);
 }
 
+nav {
+  margin:
+    calc(-1 * var(--page-pad-block))
+    calc(-1 * var(--page-pad-inline))
+    calc(2em + var(--page-pad-block));
+  padding: var(--page-pad-block) var(--page-pad-inline);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  container-type: inline-size;
+}
+
+nav a {
+  color: var(--nav-fg);
+  text-decoration: none;
+  font-family: "Liberation Mono", monospace;
+  font-size: clamp(1.5rem, 5cqw, 2.5rem);
+}
+
 footer {
   margin-top: 3em;
   padding: var(--footer-pad-block) var(--footer-pad-inline);
@@ -120,9 +140,10 @@ h1, h2, h3 {
     box-shadow: none;
   }
 
-  footer {
+  nav, footer {
     display: none;
   }
+  
 
   /* untested */
   pre > span { text-indent: -5em; padding-left: 5em; }
