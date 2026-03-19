@@ -49,8 +49,11 @@
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">$1</span><span class="st">&quot;</span> <span class="ot">-gt</span> 0 <span class="kw">]];</span> <span class="cf">then</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="bu">exec</span> <span class="st">&quot;</span><span class="va">$0</span><span class="st">&quot;</span> <span class="va">$((</span> <span class="va">$1</span> <span class="op">-</span> <span class="dv">1</span> <span class="va">))</span></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code></pre></div>
-  <p>Invoke that with 20000000 and you'll have a kernel panic in a few
-  minutes.</p>
+  <pre><code>chmod +x repro.sh
+./repro.sh</code></pre>
+  <p>If it produces no output, your Mac may not have the same problem.
+  Otherwise, invoke that with <code>20000000</code> and you'll have a
+  kernel panic in a few minutes or hours.</p>
 </main>
 
 <footer>

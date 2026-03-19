@@ -48,4 +48,10 @@ elif [[ "$1" -gt 0 ]]; then
 fi
 ```
 
-Invoke that with 20000000 and you'll have a kernel panic in a few minutes.
+```
+chmod +x repro.sh
+./repro.sh
+```
+
+If it produces no output, your Mac may not have the same problem.
+Otherwise, invoke that with `20000000` and you'll have a kernel panic in a few minutes or hours.
