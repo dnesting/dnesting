@@ -1,0 +1,143 @@
+# macOS Sandbox SBPL Reference
+
+This reference was automatically generated from the SBPL profiles shipped in `/System/Library/Sandbox/Profiles`.
+It describes patterns observed in `(allow ...)` and `(deny ...)` forms, not a complete grammar or authoritative compatibility contract.
+Some entries may be helper functions rather than primitive language features, observed pairings may not be exclusive, and unobserved operations, filters, modifiers, or pairings may still exist.
+It would be logical to infer that many filters actually apply more broadly than the operations they were observed with, but I did not attempt to do this unless filters were used with globs specifically.
+
+This is not an authoritative resource and should not be relied upon.
+
+- Generated from: {{ generated_from }}
+- Source directory: `{{ source_profile_dir }}`
+<!--
+- Profiles with extracted rules: {{ profile_count }}
+- Extracted `allow`/`deny` forms: {{ rule_count }}
+- Operations: {{ operation_count }}
+- Filters: {{ filter_count }}
+- Modifiers: {{ modifier_count }}
+-->
+
+## Language Overview
+
+SBPL is an S-expression language. Lists are function calls, atoms are symbols or literals, and comments begin with `;`. This reference focuses on unquoted `(allow ...)` and `(deny ...)` calls, but the profiles around those rules use Scheme-like helpers to build reusable predicates.
+
+A minimal rule has an action followed by one or more operations and optional filter expressions:
+
+```scheme
+(allow file-read* (subpath "/Library/Preferences"))
+(deny file-write* (with no-report))
+```
+
+Scheme numeric literals can include radix prefixes. For example, `#o0004` is an octal spelling of the integer `4`, which is convenient for Unix file mode bits:
+
+```scheme
+(allow file-read* (file-mode #o0004))
+```
+
+This corpus also uses `#"..."` for regex-like strings:
+
+```scheme
+(allow file-read* (regex #"^/Library/.*\.plist$"))
+```
+
+`let`, `let*`, and `letrec` bind local names. A bound name can hold a filter expression or a function that returns one, so calls to bound names are not treated as primitive filters:
+
+```scheme
+(let ((_home-subpath (lambda (suffix) (subpath (string-append _home suffix)))))
+  (allow file-read* (_home-subpath "/Library/Application Support/AddressBook")))
+```
+
+`define` and `define-once` introduce profile-wide helpers. `lambda` introduces parameters. Tracking those bindings helps separate profile-local helpers from built-in-looking predicates.
+
+```scheme
+(define home-cache (subpath "/Users/example/Library/Caches"))
+
+(define (home-subpath suffix)
+  (subpath (string-append "/Users/example" suffix)))
+
+(define home-regex
+  (lambda (suffix)
+    (regex (string-append "^/Users/example" suffix))))
+
+(allow file-read*
+  home-cache
+  (home-subpath "/Library/Preferences")
+  (home-regex "/Library/Logs/.*"))
+```
+
+`require-all`, `require-any`, and `require-not` appear to combine filter expressions: all, any, and negation. Their child expressions are still included in the filter data, but the combinator calls themselves are treated as structural language forms.
+
+```scheme
+(allow file-read*
+  (require-all
+    (subpath "/System")
+    (require-not (file-mode 0))))
+```
+
+`with-filter` applies a filter expression to nested rule forms:
+
+```scheme
+(with-filter (require-entitlement "com.apple.security.smartcard")
+  (allow mach-lookup (global-name "com.apple.ctkd.watcher-client")))
+```
+
+The extraction pass found {{ with_filter_predicate_count }} `with-filter` wrappers. Predicate heads only observed under `with-filter` in this corpus: {% if has_with_filter_only_predicates %}{{ with_filter_only_predicates }}{% else %}none{% endif %}.
+
+`with` attaches a modifier to a single rule. Modifier arguments follow the modifier name:
+
+```scheme
+(deny syscall-unix (with send-signal SIGKILL))
+```
+
+## Extraction Notes
+
+The extraction pass looks for structural signals that suggest a parenthesized form is not a primitive filter.
+
+- Bound local/profile names are excluded from the filter list.
+- Top-level `define` and `define-once` names from imported profiles, and helper names defined elsewhere in the observed corpus, are treated as profile helper functions rather than primitive filters.
+- Logical combinators are documented as language structure rather than filters.
+- Forms that carry nested rule bodies are treated as higher-order helpers rather than filters.
+- Zero-argument predicates remain in the filter reference when they appear directly as rule predicates and do not otherwise look structural in this corpus.
+
+## Operations
+
+{% for operation in operations %}
+{{ operation.heading }} `{{ operation.name }}`
+
+{% if operation.has_filters %}
+- Filters:
+{% for filter in operation.filters %}
+  - `{{ filter.signature }}`{{ '; example: ' ~ filter.example if filter.has_example else '' }}
+{% endfor %}
+{% endif %}
+{% if operation.has_modifiers %}
+- Modifiers:
+{% for modifier in operation.modifiers %}
+  - `{{ modifier.signature }}`{{ '; example: ' ~ modifier.example if modifier.has_example else '' }}
+{% endfor %}
+{% endif %}
+
+{% if operation.separator_after %}
+---
+
+{% endif %}
+{% endfor %}
+## Filters
+
+Operations listed here are the highest observed operation levels after glob inheritance pruning.
+
+| Filter | Highest observed operations | All Symbols | Example Arguments |
+| --- | --- | --- | --- |
+{% for filter in filters %}
+| `{{ filter.signature | table_escape }}` | {{ filter.operations | table_escape }} | {{ filter.symbols | table_escape if filter.has_symbols else '-' }} | {{ filter.examples | table_escape }} |
+{% endfor %}
+
+## Modifiers
+
+Operations listed here are the highest observed operation levels after glob inheritance pruning.
+
+| Modifier | Highest observed operations | All Symbols | Example Arguments |
+| --- | --- | --- | --- |
+{% for modifier in modifiers %}
+| `{{ modifier.signature | table_escape }}` | {{ modifier.operations | table_escape }} | {{ modifier.symbols | table_escape if modifier.has_symbols else '-' }} | {{ modifier.examples | table_escape }} |
+{% endfor %}

@@ -3,10 +3,23 @@ SHELL := /bin/zsh
 ALL_MD_FILES := $(shell find docs -name lib -prune -o -type f -name "*.md" -print)
 ALL_HTML_FILES := $(patsubst %.md,%.html,$(ALL_MD_FILES))
 
-all: $(ALL_HTML_FILES) docs/resume.pdf
+.PHONY: all clean
+
+SBPL_PREFIX := docs/2026/macos-sandbox-sbpl-reference/index
+
+all: $(ALL_HTML_FILES) $(SBPL_PREFIX).html docs/resume.pdf
 
 clean:
-	rm -f docs/index.html docs/resume.pdf docs/resume.html docs/resume.md
+	rm -f docs/index.html docs/resume.pdf docs/resume.html docs/resume.md $(SBPL_PREFIX).{md,html}
+
+$(SBPL_PREFIX).md: sandbox/extract_sb_rules.py sandbox/operation-reference.md.tmpl sandbox/requirements.txt
+	mkdir -p $(shell dirname "$@")
+	uv run --with-requirements sandbox/requirements.txt \
+		python3 sandbox/extract_sb_rules.py
+	cp sandbox/generated/operation-reference.md $@
+
+$(SBPL_PREFIX).html: $(SBPL_PREFIX).md template.html
+	pandoc -f gfm --section-divs --template=template.html --standalone -V body-class=wide-reference -t html -o $@ $<
 
 #docs/%.pdf: %.md
 #	pandoc -f gfm $(PANDOC) -t pdf -o $@ $<

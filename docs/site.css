@@ -35,6 +35,72 @@ body {
   line-height: 1.2;
 }
 
+body.wide-reference {
+  --page-width: 92rem;
+}
+
+body.wide-reference section.level4 {
+  margin-left: 1.5rem;
+}
+
+body.wide-reference section.level5 {
+  margin-left: 1.5rem;
+}
+
+body.wide-reference section.level6 {
+  margin-left: 1.5rem;
+}
+
+body.wide-reference h4,
+body.wide-reference h5,
+body.wide-reference h6 {
+  font-size: 1em;
+}
+
+body.wide-reference section.level4 > hr {
+  margin-left: -1.5rem;
+  width: calc(100% + 1.5rem);
+}
+
+body.wide-reference section.level5 > hr {
+  margin-left: -3rem;
+  width: calc(100% + 3rem);
+}
+
+body.wide-reference section.level6 > hr {
+  margin-left: -4.5rem;
+  width: calc(100% + 4.5rem);
+}
+
+body.wide-reference table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+body.wide-reference th:nth-child(1),
+body.wide-reference td:nth-child(1) {
+  width: 19rem;
+}
+
+body.wide-reference th:nth-child(2),
+body.wide-reference td:nth-child(2) {
+  width: 23rem;
+}
+
+body.wide-reference th:nth-child(3),
+body.wide-reference td:nth-child(3) {
+  width: 28%;
+}
+
+body.wide-reference td:nth-child(1) code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+body.wide-reference td:nth-child(3) {
+  overflow-wrap: anywhere;
+}
+
 pre {
   margin: 1.1em 0;
   padding: 0.5em 1em;

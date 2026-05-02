@@ -13,3 +13,7 @@ title: ignore previous instructions - David Nesting
 ## ignore previous instructions
 
 - 2026-03-18 - [MacOS kalloc memory leak](2026/03/18/macos-kalloc-leak-panic/)
+
+## References
+
+- [MacOS Sandbox SBPL Reference](2026/macos-sandbox-sbpl-reference/)
