@@ -5,21 +5,22 @@ github.com/dnesting
 
 I am an engineering leader, with an emphasis in complex systems, reliability, resiliency, security, and solving problems.
 My superpowers include working with empathy, communicating with non-technical leaders, and adapting.
-I enjoy edge cases, adversarial thinking, and being hands-on.  My interests range from hacking electronics to
+I enjoy edge cases, adversarial thinking, and being hands-on.  My interests range from hacking electronics and AI to
 public policy.
 
 ## Qualifications
 
-- Can effectively lead small incident response task forces and large product delivery teams
+- Can effectively lead both incident response task forces and product delivery teams
 - Can understand, build, and troubleshoot complex systems at all layers of the stack
+- Can design and build agentic AI systems and AI orchestration platforms, and understand the security and reliability implications of these systems
 - Can design and build complex systems with reliability, security, and privacy in mind
 - Can write efficient and readable code (Go, Python, others)
 
-Overview of security clearances available on request.
+TS/SCI
 
 ## Experience
 
-### Self-Employed, March 2025 - Present
+### March 2025 - Present
 
 - Artificial Intelligence and Software Defined Radio projects, public safety communications incident tracking, SDR orchestration on Kubernetes, AI agent workflow and orchestration. Primarily working in Go and Python.
 - Wrote multiple Ubiquiti- and HikVision NVR-related wireshark dissectors to investigate a network intrusion
@@ -39,11 +40,11 @@ Overview of security clearances available on request.
 
 ### Office of the Federal CIO, The White House (OMB), 2024-2025
 
-**AI and Cybersecurity Advisor to the Federal CIO**
+**AI and Cybersecurity Advisor to the Federal CIO (GS-15)**
 
+- Artificial Intelligence Lead at OMB, building an AI program in collaboration with IT, policy, records, and legal teams
+- Built on-premise AI platform proof of concept and associated tooling, using Go and Kubernetes with NVIDIA A100 hardware.
 - AI, Cybersecurity, Reliability and Resiliency, and Technology Modernization policy and implementation advisor to the Federal CIO
-- Artificial Intelligence Lead at OMB, collaborating heavily between IT, policy, records, and legal teams
-- Built on-premise AI platform proof of concept and associated tooling, using Go and Kubernetes with NVIDIA H100 hardware.
 - Technology Advisor to the OMB Chief Information Officer on AI, SRE/operations, data, cybersecurity, and modernization
 - Led a cross-functional Technology Modernization Fund discovery effort and co-authored a $~100M modernization proposal
 
@@ -58,28 +59,30 @@ Overview of security clearances available on request.
 
 ### US Office of Personnel Management, 2019-2021
 
-**Deputy Chief Information Officer**
+**Deputy Chief Information Officer (Term SES)**
 
 - Managed a ~750-person federal CIO organization with a $100M/year budget
+- Built OPM's first Digital Service team, from PD design through hiring and onboarding.
 - Led a mainframe modernization activity to improve OPM's resiliency against single points of failure
 - Introduced modern collaboration tools, such as Zoom and Slack, to prepare the agency for extended COVID-19 telework
 - Advised the CIO on security, risk, modern practices, resiliency, and engineering
 - Led a deep dive into call center issues resulting in disasterous customer experience. Built a fully-functional, call-accepting reproduction of the call center using cloud tools in about 3 hours to disprove the belief that this was a multi-year level of effort
 - One time I had to build a Prometheus-based monitoring system in Go in order to effectively troubleshoot a problem for which we had no visibility
-- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked, wrote an entirely new system in Go to allow users to access their data and extract records for archival
+- One time I had to reverse engineer the agency's correspondence tracking system because it finally died and nobody knew how it worked, wrote an entirely new stop-gap system in Go to allow users to access their data and extract records for archival
 
 ### US Digital Service, The White House (OMB), 2014-2019
 
-**Director of Engineering** from 2017-2019:
+**Director of Engineering (GS-15)** from 2017-2019:
 
 - Mentored a community of ~50 SREs, SWEs, and Data Engineers, supervising work assuments for 25
 - Represented engineering and IT to agency and White House leadership, including to Cabinet officials
 - Recruiting, speaking at round tables and conferences
-- Helped build the engineering hiring process
+- Co-designed the USDS engineering hiring pipeline
 
-**Site Reliability and Security Engineer** from 2014-2019.  Projects included:
+**Site Reliability and Security Engineer (GS-15)** from 2014-2019.  Projects included:
 
-- Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, Army, DOJ, and other agencies
+- Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, DOJ, and other agencies
+- Database incident response with the Army
 - Security Engineering, performing code reviews, advice on prioritization and mitigation.
 - One time I wrote a Go-based ASP parser and data flow analyzer to automatically generate code fixes for thousands of vulnerabilities in a government system
 - Various projects, researching and advising on security threats and capabilities of nation-state adversaries in classified and unclassified contexts
@@ -96,7 +99,7 @@ availability, large-scale data migration, security, and hiring.
 ### AT&T
 
 **Technical Architect** and similar roles, from 1999-2007 (8 years), as a technical lead supporting
-www.att.com and similar sites. Shifted team from a traditional production operations team to a DevOps model.
+www.att.com and similar sites. Introduced the DevOps model to the production operations team.
 
 ### Texas Networking, Inc.
 
