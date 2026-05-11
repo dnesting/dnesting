@@ -74,7 +74,7 @@ TS/SCI
 
 **Director of Engineering (GS-15)** from 2017-2019:
 
-- Mentored a community of ~50 SREs, SWEs, and Data Engineers, supervising work assuments for 25
+- Mentored a community of ~50 SREs, SWEs, and Data Engineers, supervising work assignments for 25
 - Represented engineering and IT to agency and White House leadership, including to Cabinet officials
 - Recruiting, speaking at round tables and conferences
 - Co-designed the USDS engineering hiring pipeline
