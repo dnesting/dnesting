@@ -40,7 +40,7 @@ TS/SCI
 
 ### Office of the Federal CIO, The White House (OMB), 2024-2025
 
-**AI and Cybersecurity Advisor to the Federal CIO (GS-15)**
+**AI and Cybersecurity Advisor to the Federal CIO**
 
 - Artificial Intelligence Lead at OMB, building an AI program in collaboration with IT, policy, records, and legal teams
 - Built on-premise AI platform proof of concept and associated tooling, using Go and Kubernetes with NVIDIA A100 hardware.
@@ -72,14 +72,14 @@ TS/SCI
 
 ### US Digital Service, The White House (OMB), 2014-2019
 
-**Director of Engineering (GS-15)** from 2017-2019:
+**Director of Engineering** from 2017-2019:
 
 - Mentored a community of ~50 SREs, SWEs, and Data Engineers, supervising work assignments for 25
 - Represented engineering and IT to agency and White House leadership, including to Cabinet officials
 - Recruiting, speaking at round tables and conferences
 - Co-designed the USDS engineering hiring pipeline
 
-**Site Reliability and Security Engineer (GS-15)** from 2014-2019.  Projects included:
+**Site Reliability and Security Engineer** from 2014-2019.  Projects included:
 
 - Multiple rapid response and modernization efforts, including security and availability incidents, at HHS/CMS, GSA, State, DOJ, and other agencies
 - Database incident response with the Army
@@ -93,8 +93,14 @@ TS/SCI
 
 **Site Reliability Engineer** from 2007-2014 (7.5 years), on the logs infrastructure team, managing
 all layers of the logs infrastructure, including hardware, OS, and service, and supporting Google's
-legal and privacy teams.  Projects included on-call, data integrity, privacy, access control, data
-availability, large-scale data migration, security, and hiring.
+legal and privacy teams.  Projects included:
+
+- On-call and incident response
+- Full-stack support, from hardware through OS to service, for O(1M) CPU cores and exabytes of data
+- Managed and maintained data integrity systems cryptographically proving the full data integrity of Google's logs infrastructure
+- Built and maintained a data migration system for moving petabytes of data between clusters.
+- Participated in Google's response to state-sponsored intrusions, leading to a major encryption and privilege reduction effort.
+- SRE hiring and interviewing
 
 ### AT&T
 
