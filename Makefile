@@ -34,13 +34,14 @@ docs/%.html: %.md template.html
 	docker run -it --rm \
 		-v $(PWD):/work \
 		-v $(PWD)/docs/site.css:/site.css \
+		--tmpfs /tmp \
 		-e XDG_CONFIG_HOME=/tmp \
 		-e XDG_CACHE_HOME=/tmp \
 		-e DBUS_SESSION_BUS_ADDRESS=disabled: \
 		registry.lab.lan/chromium:dev \
 		chromium \
 		--no-sandbox \
-		--headless \
+		--headless=new \
 		--autoplay-policy=no-user-gesture-required \
 		--no-first-run \
 		--disable-gpu \
@@ -51,6 +52,7 @@ docs/%.html: %.md template.html
 		--no-crashpad \
 		--disable-crash-reporter \
 		--print-to-pdf=/work/$@ \
+		--user-data-dir=/tmp \
 		--no-pdf-header-footer \
 		file:///work/$< \
 		| grep -v "ERROR:dbus"
