@@ -1,0 +1,104 @@
+---
+// The three hand-tuned architecture diagrams, emitted VERBATIM. Dropped inline
+// in a project's MDX body as `<ArchDiagram name="trunkd|observatory|sdrlight"/>`.
+// Each is wrapped in the `figure.arch` the modal script keys on
+// (`.arch` → wide modal card).
+interface Props { name: 'trunkd' | 'observatory' | 'sdrlight'; }
+const { name } = Astro.props;
+---
+{name === 'trunkd' && (
+    <figure class="arch">
+      <svg viewBox="0 0 900 366" role="img" aria-label="trunk'd architecture — capture to browser under a second, with the persistence tier">
+        <defs><marker id="tkar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#b5b1a9"/></marker></defs>
+        <path d="M30,36 V28 H870 V36" class="edge" style="stroke:#e6bcae"/>
+        <text x="450" y="21" class="accnt">≤ 1 SECOND — RF TO BROWSER</text>
+        <rect x="30"  y="64" width="112" height="50" rx="9" class="card"/><text x="86"  y="86" class="tc">SDR</text><text x="86"  y="101" class="sc">trunk-recorder</text>
+        <rect x="176" y="64" width="100" height="50" rx="9" class="card"/><text x="226" y="86" class="tc">ingest</text><text x="226" y="101" class="sc">A/A · ULIDs</text>
+        <rect x="312" y="55" width="160" height="66" rx="10" class="hub"/><text x="392" y="80" class="tc">NATS JetStream</text><text x="392" y="96" class="sc">3 durable streams</text><text x="392" y="109" class="sc">source of truth</text>
+        <rect x="520" y="64" width="100" height="50" rx="9" class="card"/><text x="570" y="86" class="tc">player</text><text x="570" y="101" class="sc">WebSocket</text>
+        <rect x="656" y="64" width="214" height="50" rx="9" class="card"/><text x="763" y="86" class="tc">Svelte console</text><text x="763" y="101" class="sc">incident board · transcripts</text>
+        <path d="M142,89 H174" class="edge" marker-end="url(#tkar)"/>
+        <path d="M276,89 H310" class="edge" marker-end="url(#tkar)"/>
+        <path d="M472,89 H518" class="edge" marker-end="url(#tkar)"/>
+        <path d="M620,89 H654" class="edge" marker-end="url(#tkar)"/>
+        <path d="M392,121 V136 H450 V150" class="edge" marker-end="url(#tkar)"/>
+        <rect x="250" y="152" width="400" height="88" rx="10" class="band"/>
+        <text x="262" y="170" class="lbl">STREAM CONSUMERS · SINGLE-PURPOSE GO SERVICES</text>
+        <rect x="262" y="180" width="84"  height="20" rx="6" class="chip"/><text x="304" y="194" class="cht">transcoder</text>
+        <rect x="372" y="180" width="88"  height="20" rx="6" class="chip"/><text x="416" y="194" class="cht">transcriber</text>
+        <rect x="486" y="180" width="94"  height="20" rx="6" class="chip"/><text x="533" y="194" class="cht">index · FTS5</text>
+        <rect x="262" y="204" width="98"  height="20" rx="6" class="chip"/><text x="311" y="218" class="cht">archiver</text>
+        <rect x="372" y="204" width="64"  height="20" rx="6" class="chip"/><text x="404" y="218" class="cht">notify</text>
+        <rect x="486" y="204" width="104" height="20" rx="6" class="chip"/><text x="538" y="218" class="cht">AI incidents</text>
+        <path d="M450,240 V256" class="edge" marker-end="url(#tkar)"/>
+        <text x="150" y="250" class="lbl">PERSISTENCE</text>
+        <rect x="150" y="258" width="600" height="64" rx="10" class="band"/>
+        <rect x="168" y="272" width="176" height="36" rx="8" class="store"/><text x="256" y="290" class="tcs">NATS KV</text><text x="256" y="302" class="sc">leases · coordination</text>
+        <rect x="362" y="272" width="176" height="36" rx="8" class="store"/><text x="450" y="290" class="tcs">SQLite / FTS5</text><text x="450" y="302" class="sc">search projection</text>
+        <rect x="556" y="272" width="176" height="36" rx="8" class="store"/><text x="644" y="290" class="tcs">GCS</text><text x="644" y="302" class="sc">Opus segments · archive</text>
+        <text x="450" y="344" class="sc" style="fill:#8a877f">writers —  ingest → KV   ·   index → SQLite/FTS5   ·   archiver → GCS</text>
+      </svg>
+    </figure>
+)}
+{name === 'observatory' && (
+    <figure class="arch">
+      <svg viewBox="0 66 972 108" role="img" aria-label="observatory control chain: telescope to drivers to ESP32 (LX200) to Raspberry Pi to clients">
+        <defs><marker id="obar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#b5b1a9"/></marker></defs>
+        <rect x="16" y="78" width="140" height="94" rx="10" class="card"/>
+        <text x="86" y="114" class="tc">Telescope mount</text>
+        <text x="86" y="131" class="sc">20″ Maksutov</text>
+        <text x="86" y="147" class="sc">2 steppers · sensors</text>
+        <rect x="220" y="84" width="136" height="48" rx="9" class="card"/>
+        <text x="288" y="104" class="tc">2× stepper drivers</text>
+        <text x="288" y="120" class="sc">IM483 microstep</text>
+        <rect x="420" y="82" width="150" height="84" rx="10" class="hub"/>
+        <text x="495" y="112" class="tc">ESP32</text>
+        <text x="495" y="128" class="sc">LX200 firmware</text>
+        <text x="495" y="143" class="sc">step-gen · LEDC PWM</text>
+        <rect x="642" y="90" width="140" height="54" rx="9" class="card"/>
+        <text x="712" y="112" class="tc">Raspberry Pi</text>
+        <text x="712" y="128" class="sc">web UI · pointing</text>
+        <rect x="846" y="90" width="110" height="54" rx="9" class="card"/>
+        <text x="901" y="112" class="tc">Clients</text>
+        <text x="901" y="128" class="sc">browsers · mobile</text>
+        <path d="M156,106 H220" class="edge" marker-end="url(#obar)"/><text x="188" y="99" class="el">motors</text>
+        <path d="M356,108 H420" class="edge" marker-end="url(#obar)"/><text x="388" y="101" class="el">step/dir</text>
+        <path d="M156,156 H420" class="edge" marker-end="url(#obar)"/><text x="280" y="149" class="el">sensors</text>
+        <path d="M570,124 H642" class="edge" marker-end="url(#obar)"/><text x="606" y="117" class="el">serial</text>
+        <path d="M782,117 H846" class="edge" marker-end="url(#obar)"/><text x="814" y="110" class="el">HTTP/WS</text>
+      </svg>
+    </figure>
+)}
+{name === 'sdrlight' && (
+    <figure class="arch">
+      <svg viewBox="0 0 940 500" role="img" aria-label="sdrlight data plane: two SDRs, each owned by a privileged radio adapter, publish into a shared-memory pool that local consumers read, with a network relay to a second node">
+        <defs><marker id="sl" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#b5b1a9"/></marker></defs>
+        <rect x="14" y="24" width="912" height="230" rx="12" class="node"/><text x="30" y="45" class="ntag">NODE A</text>
+        <rect x="40" y="70" width="118" height="48" rx="9" class="card"/><text x="99" y="90" class="tc">SDR</text><text x="99" y="105" class="sc">wideband</text>
+        <rect x="40" y="134" width="118" height="48" rx="9" class="card"/><text x="99" y="154" class="tc">SDR</text><text x="99" y="169" class="sc">VHF / UHF</text>
+        <rect x="190" y="70" width="156" height="48" rx="9" class="priv"/><text x="268" y="90" class="tcs">radio adapter</text><text x="268" y="105" class="sc">privileged</text>
+        <rect x="190" y="134" width="156" height="48" rx="9" class="priv"/><text x="268" y="154" class="tcs">radio adapter</text><text x="268" y="169" class="sc">privileged</text>
+        <rect x="384" y="84" width="200" height="110" rx="10" class="shm"/><text x="484" y="134" class="tcs">shared-memory pool</text><text x="484" y="150" class="sc">immutable loans</text>
+        <rect x="620" y="76" width="170" height="38" rx="8" class="card"/><text x="705" y="99" class="tcs">consumer · unprivileged</text>
+        <rect x="620" y="120" width="170" height="38" rx="8" class="card"/><text x="705" y="143" class="tcs">consumer · unprivileged</text>
+        <rect x="620" y="164" width="170" height="38" rx="8" class="pod"/><text x="705" y="187" class="tcs">network relay</text>
+        <path d="M158,94 H190" class="edge" marker-end="url(#sl)"/><text x="174" y="86" class="el">capture</text>
+        <path d="M158,158 H190" class="edge" marker-end="url(#sl)"/>
+        <path d="M346,94 H384" class="edge" marker-end="url(#sl)"/><text x="365" y="86" class="el">publish</text>
+        <path d="M346,158 H384" class="edge" marker-end="url(#sl)"/>
+        <path d="M584,120 H602 V95 H620" class="edge" marker-end="url(#sl)"/>
+        <path d="M584,139 H620" class="edge" marker-end="url(#sl)"/><text x="602" y="133" class="el">zero-copy</text>
+        <path d="M584,158 H602 V183 H620" class="edge" marker-end="url(#sl)"/>
+        <rect x="14" y="272" width="912" height="200" rx="12" class="node"/><text x="30" y="293" class="ntag">NODE B</text>
+        <rect x="620" y="320" width="170" height="52" rx="9" class="card"/><text x="705" y="342" class="tc">network import</text><text x="705" y="358" class="sc">→ local SHM</text>
+        <rect x="384" y="320" width="200" height="52" rx="10" class="shm"/><text x="484" y="342" class="tcs">shared-memory pool</text><text x="484" y="358" class="sc">immutable loans</text>
+        <rect x="40" y="320" width="150" height="38" rx="8" class="card"/><text x="115" y="343" class="tcs">consumer</text>
+        <rect x="40" y="368" width="150" height="38" rx="8" class="card"/><text x="115" y="391" class="tcs">consumer</text>
+        <path d="M705,202 V320" class="edge" marker-end="url(#sl)"/><text x="764" y="266" class="el">network copy · 1 hop</text>
+        <path d="M620,346 H584" class="edge" marker-end="url(#sl)"/><text x="602" y="338" class="el">publish</text>
+        <path d="M384,340 H190" class="edge" marker-end="url(#sl)"/><text x="300" y="333" class="el">zero-copy</text>
+        <path d="M384,352 H210 V387 H190" class="edge" marker-end="url(#sl)"/>
+        <text x="470" y="490" class="cap">Reads are zero-copy to local consumers (immutable loans); the network hop and today's pass-through transforms still copy — end-to-end zero-copy is the goal, not yet the reality.</text>
+      </svg>
+    </figure>
+)}

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "pdf": "bash scripts/build-pdf.sh",
+    "build:all": "astro build && bash scripts/build-pdf.sh",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^7.0.5",
+    "astro": "^7.2.0"
+  }
+}

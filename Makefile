@@ -6,6 +6,7 @@ ALL_HTML_FILES := $(patsubst %.md,%.html,$(ALL_MD_FILES))
 .PHONY: all clean
 
 SBPL_PREFIX := docs/2026/macos-sandbox-sbpl-reference/index
+PORTFOLIO_TEMPLATE := template-portfolio.html
 
 all: $(ALL_HTML_FILES) $(SBPL_PREFIX).html docs/resume.pdf
 
@@ -23,6 +24,14 @@ $(SBPL_PREFIX).html: $(SBPL_PREFIX).md template.html
 
 #docs/%.pdf: %.md
 #	pandoc -f gfm $(PANDOC) -t pdf -o $@ $<
+
+# Portfolio pages use the bespoke dark template (more specific stem wins).
+docs/index.html: docs/index.md $(PORTFOLIO_TEMPLATE)
+	pandoc -f gfm --template=$(PORTFOLIO_TEMPLATE) --standalone -t html -o $@ $<
+
+docs/projects/%/index.html: docs/projects/%/index.md $(PORTFOLIO_TEMPLATE)
+	mkdir -p $(dir $@)
+	pandoc -f gfm --template=$(PORTFOLIO_TEMPLATE) --standalone -t html -o $@ $<
 
 docs/%.html: %.md template.html
 	pandoc -f gfm --template=template.html --standalone -t html -o $@ $<

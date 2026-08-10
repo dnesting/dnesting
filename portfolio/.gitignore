@@ -1,0 +1,7 @@
+# build output & deps
+node_modules/
+dist/
+.astro/
+
+# os / editor
+.DS_Store

@@ -1,0 +1,29 @@
+---
+title: "sdrlight"
+tagline: "Scheduling radios like compute."
+kind: "In progress"
+blurb: "An in-progress attempt to schedule commodity radios like compute — a zero-copy SDR mesh on unprivileged Kubernetes pods."
+cover: "s"
+chips:
+  - "Rust"
+  - "Go"
+  - "Kubernetes"
+  - "Software Defined Radio"
+---
+import ArchDiagram from '../../components/ArchDiagram.astro';
+
+This is an ongoing project to build an orchestration layer for Software Defined Radio.
+I'm using Kubernetes Dynamic Resource Allocation (DRA) to manage hardware SDR resources,
+configuring the radios based on CRD resource requests, and streaming data through
+shared memory segments to unprivileged consumer pods.
+
+A proof of concept exists working end-to-end.
+Workloads will be able to ask for abstract SDR streams "20 MHz around 2.4GHz",
+and the platform will satisfy that request by re-using an existing compatible stream,
+allocating an idle SDR, channelizing a shared-use SDR,
+or aggregating two or more SDRs within a coherency domain.
+
+<ArchDiagram name="sdrlight" />
+
+I've achieved single-copy transfers with shared memory segments and loans,
+with a path to zero-copy DMA-to-processing options in the future.

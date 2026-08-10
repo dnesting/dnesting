@@ -1,0 +1,26 @@
+---
+title: "Luna"
+tagline: "A 1-meter lunar relief."
+kind: "Details"
+blurb: "A 1-meter lunar relief — gigabytes of NASA elevation data, a custom mesh pipeline, PETG on hardboard, projection-mapped."
+cover: "m"
+gallery:
+  - src: "/photos/luna.jpg"
+    alt: "The lit lunar relief, front view"
+  - src: "/photos/luna-oblique.jpg"
+    alt: "The relief lit at an oblique angle"
+video:
+  src: "/photos/luna-projection-mapped.mp4"
+  cap: "Projection mapping — animated light driven onto the physical relief."
+chips:
+  - "Python"
+  - "3D printing"
+  - "projection mapping"
+---
+Luna is a 1-meter lunar relief sculpture of Tycho crater.
+
+The starting point was gigabytes of NASA elevation data — SLDEM-2015 lunar topography, delivered as high-bit-depth GeoTIFFs. I wrote a Python pipeline to ingest it, sample and rescale the heightfield, and emit tiled OBJ meshes sized to a printer bed. The pipeline handles smoothing and depth-scaling so the relief reads at viewing distance without exaggerating the Moon's already-subtle topography.
+
+From there: printed in PETG on a hardboard backing, assembled, mounted.
+
+Projection mapping completes the effect, letting me control shadows and stylization.

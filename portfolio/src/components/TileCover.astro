@@ -1,0 +1,11 @@
+---
+// Keyed cover art for a showcase tile's `.g` layer. The `shot` cover (trunk'd)
+// is a flat photographic wash with no inline art; the others are hand-tuned
+// inline SVGs, emitted verbatim.
+interface Props { cover: 'shot' | 't' | 's' | 'm'; }
+const { cover } = Astro.props;
+---
+{cover === 'shot' && <Fragment />}
+{cover === 't' && <svg viewBox="0 0 300 148" fill="none" stroke="#3a6ea5" stroke-width="1.4" opacity=".5"><rect x="118" y="26" width="90" height="26" rx="4" transform="rotate(-18 118 26)"/><circle cx="120" cy="64" r="13"/><line x1="196" y1="12" x2="220" y2="23"/></svg>}
+{cover === 's' && <svg viewBox="0 0 300 148" fill="none" stroke="#2e7d5b" stroke-width="1.4" opacity=".5"><circle cx="58" cy="36" r="9"/><circle cx="58" cy="74" r="9"/><circle cx="120" cy="55" r="9"/><circle cx="196" cy="36" r="9"/><circle cx="196" cy="74" r="9"/><circle cx="248" cy="55" r="9"/><path d="M67 36 L111 53 M67 74 L111 57 M129 55 H187 M205 36 L239 53 M205 74 L239 57"/></svg>}
+{cover === 'm' && <svg viewBox="0 0 300 148" fill="none" stroke="#6b4fb0" stroke-width="1.4" opacity=".5"><circle cx="150" cy="56" r="38"/><circle cx="133" cy="43" r="8"/><circle cx="167" cy="66" r="10"/><circle cx="140" cy="72" r="4.5"/></svg>}

@@ -1,0 +1,48 @@
+# DORMANT deploy workflow for the new Astro portfolio (portfolio/).
+# Manual-trigger only (workflow_dispatch) so nothing goes live until you choose.
+# Before this can publish: in the repo's Settings → Pages, set the Source to
+# "GitHub Actions" (currently the site is served from the docs/ folder).
+# resume.pdf is committed under portfolio/public/, so CI needs no Chromium —
+# just re-run `npm run build:all` locally and commit the refreshed PDF whenever
+# résumé content changes.
+name: Deploy portfolio (Astro → Pages)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: portfolio/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

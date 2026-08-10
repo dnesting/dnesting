@@ -1,0 +1,35 @@
+---
+title: "trunk'd"
+tagline: "Public-safety radio, made legible — RF to browser in under a second."
+kind: "Live demo"
+blurb: "Public-safety radio, made legible — live SDR capture, AI transcription and incident board. RF to browser in under a second."
+cover: "shot"
+demoUrl: "https://trunkd-demo.app.dnesting.com/"
+demoNote: "live demo"
+chips:
+  - "Go"
+  - "NATS JetStream"
+  - "Kubernetes"
+  - "Software Defined Radio"
+  - "SQLite/FTS5"
+  - "Whisper STT"
+  - "Claude"
+  - "OpenAI"
+---
+import ArchDiagram from '../../components/ArchDiagram.astro';
+
+This is a project to ingest public safety communications within the Washington DC area, transcribe them in real-time,
+and use an AI agent to categorize and manage a real-time incident board for interested parties to keep updated on public safety
+concerns as they happen.
+
+A Whisper model performs the transcription, with an additional workflow for evaluating different transcription models or settings.
+I additionally use entity extraction combined with DC street names and other vocabulary to improve signal, provide contextual links,
+and allow for geofenced notifications. The incident board management agent has access to tools allowing it to research transmissions and use audio-capable reasoning model
+to get a second opinion on transcripts or verify its understanding.
+
+Using NATS JetStream and an optimized SDR -> WebSockets path I'm able to measurably play transcoded audio samples in the browser less than a second after RF capture,
+with transcripts usually following within a few seconds (and often competing).
+
+The system also provides a performant and expressive search mechanism and an archive of transmissions going back roughly a year.
+
+<ArchDiagram name="trunkd" />

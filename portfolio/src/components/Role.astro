@@ -1,0 +1,68 @@
+---
+import Tile from './Tile.astro';
+import PressTile from './PressTile.astro';
+import { getCollection } from 'astro:content';
+
+// A single experience row, authored in experience.mdx as:
+//
+//   <Role years="2025 — now" role="Consulting" org="…" place="Independent"
+//         projects={['trunkd','vega','sdrlight','luna']}>
+//   Lead paragraph, written as **Markdown** (this is the default slot).
+//
+//   <Fragment slot="bullets">
+//   - a Markdown bullet
+//   - another
+//   </Fragment>
+//   </Role>
+//
+// Visual order: rolerow → lead → showcase tiles → bullets → press tiles.
+interface PressItem {
+  href: string;
+  title: string;
+  source: string;
+  // Corner label ("Press" / "Interview") and cover-art tint (`cov-<cover>`).
+  label?: string;
+  cover?: string;
+}
+interface Props {
+  years: string;
+  role: string;
+  org?: string;
+  place: string;
+  // Showcase project keys (only Consulting has the four).
+  projects?: string[];
+  press?: PressItem[];
+}
+const { years, role: title, org, place, projects = [], press = [] } = Astro.props;
+
+// Resolve project keys → tile data from the projects collection.
+const allProjects = await getCollection('projects');
+const projectMap = Object.fromEntries(allProjects.map((p) => [p.id, p]));
+const projectEntries = projects.map((k) => projectMap[k]).filter(Boolean);
+
+// Render the Markdown slots to HTML and gate on real content — roles with no
+// lead/bullets (OPM, Education) leave only whitespace between the tags, which we
+// must not emit as an empty `.lead`/`.pts` box.
+const leadHtml = Astro.slots.has('default') ? ((await Astro.slots.render('default')) ?? '').trim() : '';
+const bulletsHtml = Astro.slots.has('bullets') ? ((await Astro.slots.render('bullets')) ?? '').trim() : '';
+---
+<div class="xp">
+  <div class="yr">{years}</div>
+  <div class="main">
+    <div class="rolerow"><h3 class="role">{title}{org && <Fragment> <span class="org">/ {org}</span></Fragment>}</h3><span class="place">{place}</span></div>
+    {leadHtml && <div class="lead" set:html={leadHtml} />}
+    {projectEntries.length > 0 && (
+      <div class="xtiles">
+        {projectEntries.map((p) => <Tile project={p} />)}
+      </div>
+    )}
+    {bulletsHtml && <div class="pts" set:html={bulletsHtml} />}
+    {press.length > 0 && (
+      <div class="xtiles">
+        {press.map((p) => (
+          <PressTile href={p.href} title={p.title} source={p.source} label={p.label ?? 'Press'} cover={p.cover ?? 'g'} />
+        ))}
+      </div>
+    )}
+  </div>
+</div>

@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Capabilities from '../components/Capabilities.astro';
+import ProjectModal from '../components/ProjectModal.astro';
+import Experience from '../content/experience.mdx';
+
+const projects = await getCollection('projects');
+const projectMap = Object.fromEntries(projects.map((p) => [p.id, p]));
+
+// The four showcase modals, in tile order (as Consulting lists them).
+const MODAL_ORDER = ['trunkd', 'vega', 'sdrlight', 'luna'];
+const modals = MODAL_ORDER.map((k) => projectMap[k]).filter(Boolean);
+---
+<Base title="David Nesting — experience">
+  <Hero />
+  <Capabilities />
+
+  <div class="sec"><h2>Experience &amp; selected work</h2></div>
+
+  <Experience />
+
+  {modals.map((project) => <ProjectModal project={project} />)}
+</Base>

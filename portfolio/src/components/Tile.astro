@@ -1,0 +1,17 @@
+---
+import TileCover from './TileCover.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props { project: CollectionEntry<'projects'>; }
+const { project } = Astro.props;
+const key = project.id;
+const { title, blurb, kind, cover } = project.data;
+
+// Only a live demo earns the accented "Live demo" corner; everything else
+// (Details, In progress) surfaces as "Details" on the tile.
+const live = kind === 'Live demo';
+const metaLabel = live ? 'Live demo' : 'Details';
+---
+<a class={`tile cov-${cover}`} href={`#p=${key}`} data-modal={key}><div class="g"><TileCover cover={cover} /></div><div class="scrim"></div>
+  <span class={live ? 'meta live' : 'meta'}>{metaLabel}</span>
+  <div class="t"><h3 set:html={title}></h3><p set:html={blurb}></p></div></a>

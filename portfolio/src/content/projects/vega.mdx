@@ -1,0 +1,33 @@
+---
+title: "Vega-Bray Observatory"
+tagline: "Reverse-engineering a 20-inch telescope mount that hadn't moved in 15 years."
+kind: "Live demo"
+blurb: "A 20″ mount, dark for 15 years, reverse-engineered into ESP32 firmware and a Go pointing service."
+cover: "t"
+demoUrl: "https://vega-bray-sim.app.dnesting.com/"
+demoNote: "real app and firmware, simulated telescope"
+gallery:
+  - src: "/photos/observatory-dome.jpg"
+    alt: "The observatory dome with its shutter open"
+  - src: "/photos/telescope-david.jpg"
+    alt: "David at a laptop beneath the 20-inch telescope"
+chips:
+  - "ESP32"
+  - "Go"
+  - "C++17"
+  - "embedded"
+  - "reverse engineering"
+  - "celestial navigation"
+---
+import ArchDiagram from '../../components/ArchDiagram.astro';
+
+The custom 20-inch Maksutov at Vega-Bray had been dark for ~15 years, its original control electronics gone and no documentation.
+We reverse engineered the hardware, and built an ESP32-based LX200-compatible controller.
+On top of that, a Go-based API serves a React frontend providing a celestial map and user interface for the telescope.
+We leverage a 3D model and ROS-inspired URDF model and kinematics to build motion plans that avoid self-collisions,
+a real concern with these German equatorial mount telescopes.
+
+<ArchDiagram name="observatory" />
+
+I additionally built a simulated telescope so that the whole system could be tested end-to-end, including firmware, before deploying to real hardware.
+This drives the demo here.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>$title$</title>
+$for(author-meta)$
+<meta name="author" content="$author-meta$">
+$endfor$
+$if(description-meta)$
+<meta name="description" content="$description-meta$">
+$endif$
+$if(keywords)$
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<script>
+  /* Apply saved theme before first paint to avoid a flash. */
+  (function () {
+    try {
+      if (localStorage.getItem("theme") === "light") {
+        document.documentElement.classList.add("theme-light");
+      }
+    } catch (e) {}
+  })();
+</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/portfolio.css">
+</head>
+<body class="$if(body-class)$$body-class$$else$portfolio$endif$">
+<header class="site-nav" data-nav>
+  <a class="brand" href="/">ignore&nbsp;previous&nbsp;instructions</a>
+  <nav class="nav-links">
+    <a href="/#work">Work</a>
+    <a href="/resume.html">Résumé</a>
+    <a href="https://github.com/dnesting">GitHub</a>
+    <a href="https://www.linkedin.com/in/dnesting/">LinkedIn</a>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark" title="Switch light / dark">
+      <span class="tt-dot" aria-hidden="true"></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+$body$
+</main>
+
+<footer class="site-footer">
+  <div class="foot-inner">
+    <span class="foot-name">David Nesting</span>
+    <a href="mailto:david.nesting@gmail.com">david.nesting@gmail.com</a>
+    <span class="foot-note">Engineering leader · systems, AI &amp; radio</span>
+  </div>
+</footer>
+
+<script src="/portfolio.js" defer></script>
+</body>
+</html>

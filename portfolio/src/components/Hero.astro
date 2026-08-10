@@ -1,0 +1,8 @@
+---
+import { site } from '../data/site';
+const { kicker, headline, blurb } = site.hero;
+---
+<div class="hero">
+  <div><p class="hi" set:html={kicker}></p><h1 set:html={headline}></h1></div>
+  <p set:html={blurb}></p>
+</div>

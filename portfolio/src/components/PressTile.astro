@@ -1,0 +1,15 @@
+---
+// A press/interview clipping tile (hidden in the @media print résumé via
+// `.tile.press`). Not modal-linked — it points straight at the article.
+interface Props {
+  href: string;
+  label: string;
+  cover: string;
+  title: string;
+  source: string;
+}
+const { href, label, cover, title, source } = Astro.props;
+---
+<a class={`tile cov-${cover} press`} href={href}><div class="g"></div><div class="scrim"></div>
+  <span class="meta">{label}</span>
+  <div class="t"><h3>{title}</h3><p set:html={source}></p></div></a>
