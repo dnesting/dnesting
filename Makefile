@@ -1,5 +1,30 @@
 SHELL := /bin/zsh
 
+# ── The site is an Astro project in portfolio/ (GitHub Pages serves docs/) ─────
+.DEFAULT_GOAL := help
+.PHONY: help dev build deploy
+
+help:
+	@echo "Site = Astro project in portfolio/  (GitHub Pages serves docs/)."
+	@echo ""
+	@echo "  make dev     run locally at http://localhost:4321"
+	@echo "  make build   build the site + résumé PDF into portfolio/dist"
+	@echo "  make deploy  build, publish to docs/, commit & push  (goes LIVE)"
+	@echo ""
+	@echo "(The pandoc rules below are the retired old pipeline; the blog is now"
+	@echo " static under portfolio/public/.)"
+
+dev:
+	cd portfolio && npm run dev
+
+build:
+	cd portfolio && npm run build:all
+
+deploy:
+	cd portfolio && npm run deploy
+
+# ── Legacy pandoc pipeline (retired) ──────────────────────────────────────────
+
 ALL_MD_FILES := $(shell find docs -name lib -prune -o -type f -name "*.md" -print)
 ALL_HTML_FILES := $(patsubst %.md,%.html,$(ALL_MD_FILES))
 

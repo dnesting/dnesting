@@ -9,6 +9,7 @@
     "build": "astro build",
     "pdf": "bash scripts/build-pdf.sh",
     "build:all": "astro build && bash scripts/build-pdf.sh",
+    "deploy": "bash scripts/deploy.sh",
     "preview": "astro preview",
     "astro": "astro"
   },
