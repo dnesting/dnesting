@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-08-13T17:39:25Z",
+  "windowDays": 30,
+  "groups": [
+    {
+      "label": "longhorn",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-08-13T12:24:14Z",
+      "counts": [
+        {
+          "kind": "prs",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-07-14&type=pullrequests&s=updated&o=desc"
+        },
+        {
+          "kind": "issues",
+          "n": 1,
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-14&type=issues&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 4,
+          "url": null
+        }
+      ]
+    },
+    {
+      "label": "trunk'd",
+      "kind": "repo",
+      "private": true,
+      "url": null,
+      "lastAt": "2026-08-12T15:50:15Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 171,
+          "url": null
+        }
+      ]
+    },
+    {
+      "label": "ui-dissector",
+      "kind": "repo",
+      "private": false,
+      "url": "https://github.com/dnesting/ui-dissector",
+      "lastAt": "2026-08-09T13:18:11Z",
+      "counts": [
+        {
+          "kind": "issues",
+          "n": 1,
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-14&type=issues&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 3,
+          "url": null
+        }
+      ]
+    }
+  ]
+}

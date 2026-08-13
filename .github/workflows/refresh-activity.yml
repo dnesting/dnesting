@@ -1,0 +1,62 @@
+# Rebuilds the site daily so "Recent GitHub contributions" stays current, then
+# commits the result to docs/, which GitHub Pages serves.
+#
+# Requires a repository secret ACTIVITY_TOKEN: a fine-grained PAT with
+# Contents: read + Metadata: read on the repos listed in
+# portfolio/src/data/activity.config.mjs (including the private ones). Without
+# it the build still succeeds and republishes the committed activity.json.
+#
+# resume.pdf is committed under portfolio/public/, so no Chromium is needed here
+# — this runs `build`, not `build:all`.
+name: Refresh GitHub activity
+
+on:
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-activity
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: portfolio/package-lock.json
+
+      - run: npm ci
+
+      - name: Refresh activity data
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
+        run: npm run activity
+
+      - run: npm run build
+
+      - name: Publish dist/ to docs/
+        run: rsync -a --delete dist/ ../docs/
+
+      - name: Commit if anything changed
+        working-directory: .
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No change to publish.'
+            exit 0
+          fi
+          git commit -m "Refresh GitHub activity ($(date '+%Y-%m-%d'))"
+          git push

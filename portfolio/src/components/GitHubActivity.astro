@@ -1,0 +1,60 @@
+---
+import activity from '../data/activity.json';
+
+const NOUN = { prs: 'PR', issues: 'issue', reviews: 'review', commits: 'commit' };
+
+function ago(iso) {
+  const days = Math.floor((Date.now() - Date.parse(iso)) / 86400000);
+  if (days <= 0) return 'today';
+  if (days === 1) return 'yesterday';
+  if (days < 30) return `${days} days ago`;
+  return 'over a month ago';
+}
+
+const { groups, windowDays } = activity;
+---
+{groups.length > 0 && (
+  <>
+    <div class="sec ghact-sec">
+      <h2>Recent GitHub contributions</h2>
+      <span>last {windowDays} days</span>
+    </div>
+    <div class="pts ghact">
+      <ul>
+        {groups.map((group) => (
+          <li>
+            <b>{group.url ? <a href={group.url}>{group.label}</a> : group.label}</b>
+            {group.private && <span class="priv">private</span>}
+            {' — '}
+            {group.counts.map((count, i) => {
+              const text = `${count.n} ${NOUN[count.kind]}${count.n === 1 ? '' : 's'}`;
+              return (
+                <>
+                  {i > 0 && ', '}
+                  {count.url ? <a href={count.url}>{text}</a> : text}
+                </>
+              );
+            })}
+            <span class="when">
+              {' · '}
+              <time datetime={group.lastAt}>{ago(group.lastAt)}</time>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <script is:inline>
+      // Rebuilds run on a schedule, so the timestamps baked in at build time
+      // drift. Recompute them against the reader's clock.
+      for (const el of document.querySelectorAll('.ghact time[datetime]')) {
+        const days = Math.floor((Date.now() - Date.parse(el.dateTime)) / 86400000);
+        el.textContent =
+          days <= 0 ? 'today'
+          : days === 1 ? 'yesterday'
+          : days < 30 ? `${days} days ago`
+          : 'over a month ago';
+      }
+    </script>
+  </>
+)}

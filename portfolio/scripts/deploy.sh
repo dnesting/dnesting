@@ -8,7 +8,16 @@ set -euo pipefail
 here="$(cd "$(dirname "$0")/.." && pwd)"   # portfolio/
 repo="$(cd "$here/.." && pwd)"             # repo root
 
+cd "$repo"
+# The daily refresh-activity workflow also commits to master, so pick up its
+# commits before building — otherwise the push below is rejected.
+echo "▶ Syncing with origin…"
+git pull --rebase --autostash origin master
+
 cd "$here"
+echo "▶ Refreshing GitHub activity data…"
+GITHUB_TOKEN="${GITHUB_TOKEN:-$(gh auth token 2>/dev/null || true)}" npm run activity
+
 echo "▶ Building site + résumé PDF…"
 npm run build:all
 

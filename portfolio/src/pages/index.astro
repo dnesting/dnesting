@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import Capabilities from '../components/Capabilities.astro';
+import GitHubActivity from '../components/GitHubActivity.astro';
 import ProjectModal from '../components/ProjectModal.astro';
 import Experience from '../content/experience.mdx';
 
@@ -20,6 +21,8 @@ const modals = MODAL_ORDER.map((k) => projectMap[k]).filter(Boolean);
   <div class="sec"><h2>Experience &amp; selected work</h2></div>
 
   <Experience />
+
+  <GitHubActivity />
 
   {modals.map((project) => <ProjectModal project={project} />)}
 </Base>
