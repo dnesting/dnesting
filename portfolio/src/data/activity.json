@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-08-22T09:26:01Z",
+  "generatedAt": "2026-08-23T09:26:29Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "trunk'd",
+      "kind": "repo",
+      "private": true,
+      "url": null,
+      "lastAt": "2026-08-22T23:25:48Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 106,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "longhorn",
       "kind": "org",
@@ -12,30 +26,16 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-07-23&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-07-24&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-23&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-24&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
           "n": 3,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "trunk'd",
-      "kind": "repo",
-      "private": true,
-      "url": null,
-      "lastAt": "2026-08-12T15:50:15Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 120,
           "url": null
         }
       ]
@@ -50,7 +50,7 @@
         {
           "kind": "issues",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-23&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-24&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
