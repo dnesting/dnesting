@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T09:28:25Z",
+  "generatedAt": "2026-08-27T12:47:42Z",
   "windowDays": 30,
   "groups": [
     {
@@ -26,12 +26,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-07-27&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-07-28&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-27&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-28&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -50,7 +50,7 @@
         {
           "kind": "issues",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-27&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-07-28&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
