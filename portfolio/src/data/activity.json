@@ -1,7 +1,31 @@
 {
-  "generatedAt": "2026-09-06T09:24:34Z",
+  "generatedAt": "2026-09-07T09:34:57Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "longhorn",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-09-07T07:00:00Z",
+      "counts": [
+        {
+          "kind": "prs",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-08&type=pullrequests&s=updated&o=desc"
+        },
+        {
+          "kind": "issues",
+          "n": 1,
+          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-08&type=issues&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 4,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "trunk'd",
       "kind": "repo",
@@ -17,30 +41,6 @@
       ]
     },
     {
-      "label": "longhorn",
-      "kind": "org",
-      "private": false,
-      "url": null,
-      "lastAt": "2026-08-17T17:01:03Z",
-      "counts": [
-        {
-          "kind": "prs",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-07&type=pullrequests&s=updated&o=desc"
-        },
-        {
-          "kind": "issues",
-          "n": 1,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-07&type=issues&s=updated&o=desc"
-        },
-        {
-          "kind": "commits",
-          "n": 3,
-          "url": null
-        }
-      ]
-    },
-    {
       "label": "ui-dissector",
       "kind": "repo",
       "private": false,
@@ -50,7 +50,7 @@
         {
           "kind": "issues",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-07&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fui-dissector%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-08&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
