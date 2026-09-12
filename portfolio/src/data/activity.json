@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:28:16Z",
+  "generatedAt": "2026-09-12T09:24:59Z",
   "windowDays": 30,
   "groups": [
     {
@@ -11,7 +11,7 @@
       "counts": [
         {
           "kind": "commits",
-          "n": 184,
+          "n": 179,
           "url": null
         }
       ]
@@ -40,7 +40,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-12&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-13&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -59,7 +59,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-12&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-13&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -90,13 +90,8 @@
       "lastAt": "2026-09-07T07:00:00Z",
       "counts": [
         {
-          "kind": "prs",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3Alonghorn%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-12&type=pullrequests&s=updated&o=desc"
-        },
-        {
           "kind": "commits",
-          "n": 4,
+          "n": 3,
           "url": null
         }
       ]
