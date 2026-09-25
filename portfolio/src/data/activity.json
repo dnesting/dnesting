@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T09:29:38Z",
+  "generatedAt": "2026-09-25T09:30:04Z",
   "windowDays": 30,
   "groups": [
     {
@@ -40,7 +40,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-25&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-26&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -59,7 +59,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-25&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-26&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
