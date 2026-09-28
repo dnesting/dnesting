@@ -1,7 +1,45 @@
 {
-  "generatedAt": "2026-09-27T09:27:37Z",
+  "generatedAt": "2026-09-28T09:40:53Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "AlexxIT",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-09-27T14:55:45Z",
+      "counts": [
+        {
+          "kind": "prs",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-29&type=pullrequests&s=updated&o=desc"
+        },
+        {
+          "kind": "issues",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-29&type=issues&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 23,
+          "url": null
+        }
+      ]
+    },
+    {
+      "label": "sense",
+      "kind": "repo",
+      "private": false,
+      "url": "https://github.com/dnesting/sense",
+      "lastAt": "2026-09-27T07:00:00Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 3,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "trunk'd",
       "kind": "repo",
@@ -40,7 +78,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-28&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-29&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -59,39 +97,11 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-28&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-29&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
           "n": 3,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "sense",
-      "kind": "repo",
-      "private": false,
-      "url": "https://github.com/dnesting/sense",
-      "lastAt": "2026-09-07T07:00:00Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 2,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "longhorn",
-      "kind": "org",
-      "private": false,
-      "url": null,
-      "lastAt": "2026-09-07T07:00:00Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 1,
           "url": null
         }
       ]
