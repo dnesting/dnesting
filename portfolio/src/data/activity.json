@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-09-30T09:31:47Z",
+  "generatedAt": "2026-10-01T09:33:22Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "trunk'd",
+      "kind": "repo",
+      "private": true,
+      "url": null,
+      "lastAt": "2026-09-30T11:35:10Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 201,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "AlexxIT",
       "kind": "org",
@@ -12,12 +26,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-31&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-01&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-08-31&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-01&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -36,20 +50,6 @@
         {
           "kind": "commits",
           "n": 3,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "trunk'd",
-      "kind": "repo",
-      "private": true,
-      "url": null,
-      "lastAt": "2026-09-21T21:06:04Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 200,
           "url": null
         }
       ]
@@ -78,7 +78,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-31&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-01&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -97,7 +97,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-08-31&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-01&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
