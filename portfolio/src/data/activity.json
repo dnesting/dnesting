@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:27:55Z",
+  "generatedAt": "2026-10-04T11:04:20Z",
   "windowDays": 30,
   "groups": [
     {
@@ -7,11 +7,11 @@
       "kind": "repo",
       "private": true,
       "url": null,
-      "lastAt": "2026-09-30T11:35:10Z",
+      "lastAt": "2026-10-03T18:51:49Z",
       "counts": [
         {
           "kind": "commits",
-          "n": 201,
+          "n": 202,
           "url": null
         }
       ]
@@ -26,12 +26,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-03&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-04&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-03&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-04&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -78,7 +78,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-03&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-04&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -97,7 +97,7 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-03&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-04&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
