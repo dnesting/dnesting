@@ -1,17 +1,36 @@
 {
-  "generatedAt": "2026-10-05T09:43:44Z",
+  "generatedAt": "2026-10-06T09:32:44Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "sense-exporter",
+      "kind": "repo",
+      "private": false,
+      "url": "https://github.com/dnesting/sense-exporter",
+      "lastAt": "2026-10-05T21:07:43Z",
+      "counts": [
+        {
+          "kind": "prs",
+          "n": 1,
+          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-06&type=pullrequests&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 4,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "trunk'd",
       "kind": "repo",
       "private": true,
       "url": null,
-      "lastAt": "2026-10-03T18:51:49Z",
+      "lastAt": "2026-10-05T18:52:46Z",
       "counts": [
         {
           "kind": "commits",
-          "n": 202,
+          "n": 253,
           "url": null
         }
       ]
@@ -26,12 +45,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-05&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-06&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-05&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-06&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -78,30 +97,11 @@
         {
           "kind": "prs",
           "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-05&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-06&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "commits",
           "n": 1,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "sense-exporter",
-      "kind": "repo",
-      "private": false,
-      "url": "https://github.com/dnesting/sense-exporter",
-      "lastAt": "2026-09-07T19:47:31Z",
-      "counts": [
-        {
-          "kind": "prs",
-          "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-05&type=pullrequests&s=updated&o=desc"
-        },
-        {
-          "kind": "commits",
-          "n": 3,
           "url": null
         }
       ]
