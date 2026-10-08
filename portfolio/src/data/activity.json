@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:33:19Z",
+  "generatedAt": "2026-10-08T09:34:29Z",
   "windowDays": 30,
   "groups": [
     {
@@ -10,13 +10,8 @@
       "lastAt": "2026-10-05T21:07:43Z",
       "counts": [
         {
-          "kind": "prs",
-          "n": 1,
-          "url": "https://github.com/search?q=repo%3Adnesting%2Fsense-exporter%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-07&type=pullrequests&s=updated&o=desc"
-        },
-        {
           "kind": "commits",
-          "n": 4,
+          "n": 1,
           "url": null
         }
       ]
@@ -30,7 +25,7 @@
       "counts": [
         {
           "kind": "commits",
-          "n": 253,
+          "n": 88,
           "url": null
         }
       ]
@@ -45,12 +40,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-07&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-08&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-07&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-08&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
@@ -68,7 +63,7 @@
       "counts": [
         {
           "kind": "commits",
-          "n": 3,
+          "n": 1,
           "url": null
         }
       ]
@@ -80,25 +75,6 @@
       "url": null,
       "lastAt": "2026-09-16T00:07:42Z",
       "counts": [
-        {
-          "kind": "commits",
-          "n": 1,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "mdlayher",
-      "kind": "org",
-      "private": false,
-      "url": null,
-      "lastAt": "2026-09-07T19:55:25Z",
-      "counts": [
-        {
-          "kind": "prs",
-          "n": 1,
-          "url": "https://github.com/search?q=org%3Amdlayher%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-07&type=pullrequests&s=updated&o=desc"
-        },
         {
           "kind": "commits",
           "n": 1,
