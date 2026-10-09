@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:34:29Z",
+  "generatedAt": "2026-10-09T09:34:51Z",
   "windowDays": 30,
   "groups": [
     {
@@ -40,12 +40,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-08&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-09&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-08&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-09&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
