@@ -27,6 +27,22 @@ docker run --rm --user 0 --tmpfs /work -e HOME=/work \
   --print-to-pdf=/out/resume.pdf \
   "http://$HOSTIP:$PORT/" 2>&1 | grep -iv dbus || true
 
+# The résumé is meant to be two pages. Fail the build if it grows a third, so a
+# new bullet can't silently push it over. Needs poppler (`brew install poppler`);
+# where pdfinfo is missing the check is skipped with a warning, not an error.
+MAX_PAGES=2
+if command -v pdfinfo >/dev/null 2>&1; then
+  pages="$(pdfinfo dist/resume.pdf | awk '/^Pages:/{print $2}')"
+  if [ "${pages:-0}" -gt "$MAX_PAGES" ]; then
+    echo "resume.pdf is ${pages} pages; the limit is ${MAX_PAGES}." >&2
+    echo "Tighten the @media print block in src/styles/global.css, or cut content." >&2
+    exit 1
+  fi
+  echo "résumé is ${pages} page(s) (limit ${MAX_PAGES})"
+else
+  echo "warning: pdfinfo not found — skipping the ${MAX_PAGES}-page check." >&2
+fi
+
 # Keep a copy in public/ so `npm run dev` can also serve /resume.pdf.
 cp -f dist/resume.pdf public/resume.pdf
 echo "wrote dist/resume.pdf (and public/resume.pdf)"

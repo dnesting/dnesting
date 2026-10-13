@@ -1,22 +1,33 @@
-# portfolio/ — working area for the new site
+# portfolio/ — the dnesting.com site
 
-This is the durable home for the new portfolio/résumé (moved out of `/tmp` scratch).
-Nothing here is published yet; `docs/` still serves the old site.
+An Astro static site. It builds both the web portfolio and `resume.pdf`: the PDF is
+the homepage printed headless with Chromium, so the `@media print` block in
+`src/styles/global.css` *is* the résumé layout.
 
-## What's here
-- `index.html` — the interactive résumé (hero, capabilities, experience timeline,
-  showcase tiles → modals, embedded trunk'd architecture diagram, print/PDF styles).
-- `detail_copy.md` — first-person draft copy for each tile's modal.
-- `t2_incidents.png` — screenshot used as the trunk'd tile cover.
-- `photos/` — **drop your images here.**
+## Commands
 
-## Dropping photos
-Put images in `photos/` with descriptive names, and tell me which project/role each
-belongs to (e.g. `luna-relief-wall.jpg`, `opm-mainframe.jpg`). I'll wire them into the
-right modal (Luna gallery, the OPM items, etc.) and size/crop as needed.
+    npm run dev        # http://localhost:4321
+    npm run build      # site → dist/
+    npm run build:all  # site + resume.pdf (needs Docker + registry.lab.lan)
+    npm run deploy     # build, publish to ../docs/, commit and push — goes LIVE
 
-## Next step
-Decide the site generator (Astro / Hugo / Eleventy). That turns this single `index.html`
-into per-page Markdown + a small amount of structured data for the experience/projects,
-and gives photos a proper assets pipeline. The print/PDF work and the diagram carry over
-unchanged.
+## Where content lives
+
+| What | File |
+|---|---|
+| Hero copy, capability chips | `src/data/site.ts` |
+| Experience timeline | `src/content/experience.mdx` |
+| Showcase projects (tile + modal) | `src/content/projects/*.mdx` |
+| Contact line, nav, footer | `src/layouts/Base.astro` |
+| Which GitHub repos appear under "Recent contributions" | `src/data/activity.config.mjs` |
+| All styling, including the print/résumé rules | `src/styles/global.css` |
+
+Older articles under `public/2026/` and `public/projects/trunkd/` are pre-built HTML
+from the pandoc rules in the repo-root Makefile; they use `public/site.css`, not the
+Astro layout.
+
+## The résumé is two pages
+
+`scripts/build-pdf.sh` fails the build if `resume.pdf` grows to three. Note that print
+lays out at 720px — under the 760px mobile breakpoint — so mobile rules apply to the
+PDF unless the print block overrides them.

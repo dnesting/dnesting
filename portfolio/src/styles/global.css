@@ -171,8 +171,11 @@
     .top .brand b{font-size:17pt;letter-spacing:-.4px;color:var(--ink)}
     .pcontact{display:block;margin-top:6px;font-family:var(--mono);font-size:9pt;color:var(--dim)}
 
-    /* hero: keep the tagline + pitch, tighten for paper */
-    .hero{gap:24px;margin-bottom:4px}
+    /* hero: keep the tagline + pitch, tighten for paper.
+       NOTE: print lays out at the page width (letter - 0.5in margins = 720px),
+       which is under the 760px mobile breakpoint above — so every mobile rule
+       applies to the PDF too. Restate the two-column grid or the hero stacks. */
+    .hero{grid-template-columns:1fr 1fr;gap:24px;margin-bottom:4px;align-items:start}
     .hero .hi{font-size:9.5pt;margin-bottom:4px}
     .hero h1{font-size:29pt;letter-spacing:-1px}
     .hero p{font-size:9.5pt;line-height:1.48}
@@ -187,7 +190,7 @@
     .sec h2{font-size:10pt}
 
     /* experience rows — never split a role across a page */
-    .xp{grid-template-columns:92px 1fr;gap:16px;padding:11px 0;break-inside:avoid}
+    .xp{grid-template-columns:92px 1fr;gap:16px;padding:8px 0;break-inside:avoid}
     .xp .yr{font-size:8.5pt}
     .role{font-size:12pt}
     .lead{margin-top:4px}
@@ -208,9 +211,10 @@
     /* plain bullets: tighten to match */
     .pts{margin-top:4px}
     .pts ul{padding-left:16px}
-    .pts li{font-size:9.5pt;line-height:1.42;color:var(--dim);margin:0 0 2px;break-inside:avoid}
+    .pts li{font-size:9.5pt;line-height:1.42;color:var(--dim);margin:0 0 1px;break-inside:avoid}
 
-    .foot{margin-top:20px;font-size:8pt}
+    /* the footer gag already rides in the letterhead brand line above */
+    .foot{display:none!important}
     .modal{display:none!important}
     .ghact,.ghact-sec{display:none!important} /* GitHub activity stays on the web, off the résumé */
   }
