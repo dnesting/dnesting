@@ -33,10 +33,10 @@ ALL_HTML_FILES := $(patsubst %.md,%.html,$(ALL_MD_FILES))
 SBPL_PREFIX := docs/2026/macos-sandbox-sbpl-reference/index
 PORTFOLIO_TEMPLATE := template-portfolio.html
 
-all: $(ALL_HTML_FILES) $(SBPL_PREFIX).html docs/resume.pdf
+all: $(ALL_HTML_FILES) $(SBPL_PREFIX).html
 
 clean:
-	rm -f docs/index.html docs/resume.pdf docs/resume.html docs/resume.md $(SBPL_PREFIX).{md,html}
+	rm -f docs/index.html $(SBPL_PREFIX).{md,html}
 
 $(SBPL_PREFIX).md: sandbox/extract_sb_rules.py sandbox/operation-reference.md.tmpl sandbox/requirements.txt
 	mkdir -p $(shell dirname "$@")
@@ -63,32 +63,3 @@ docs/%.html: %.md template.html
 
 %.html: %.md template.html
 	pandoc -f gfm --template=template.html --standalone -t html -o $@ $<
-
-%.pdf: %.html
-	docker run -it --rm \
-		-v $(PWD):/work \
-		-v $(PWD)/docs/site.css:/site.css \
-		--tmpfs /tmp \
-		-e XDG_CONFIG_HOME=/tmp \
-		-e XDG_CACHE_HOME=/tmp \
-		-e DBUS_SESSION_BUS_ADDRESS=disabled: \
-		registry.lab.lan/chromium:dev \
-		chromium \
-		--no-sandbox \
-		--headless=new \
-		--autoplay-policy=no-user-gesture-required \
-		--no-first-run \
-		--disable-gpu \
-		--use-fake-ui-for-media-stream \
-		--use-fake-device-for-media-stream \
-		--disable-sync \
-		--no-sandbox \
-		--no-crashpad \
-		--disable-crash-reporter \
-		--print-to-pdf=/work/$@ \
-		--user-data-dir=/tmp \
-		--no-pdf-header-footer \
-		file:///work/$< \
-		| grep -v "ERROR:dbus"
-
-#		--no-margins \
