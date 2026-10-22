@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-10-21T09:30:22Z",
+  "generatedAt": "2026-10-22T09:30:42Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "trunk'd",
+      "kind": "repo",
+      "private": true,
+      "url": null,
+      "lastAt": "2026-10-21T12:18:22Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 55,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "sense-exporter",
       "kind": "repo",
@@ -17,20 +31,6 @@
       ]
     },
     {
-      "label": "trunk'd",
-      "kind": "repo",
-      "private": true,
-      "url": null,
-      "lastAt": "2026-10-05T18:52:46Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 88,
-          "url": null
-        }
-      ]
-    },
-    {
       "label": "AlexxIT",
       "kind": "org",
       "private": false,
@@ -40,12 +40,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-21&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-22&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-21&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-22&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
