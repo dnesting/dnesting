@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-10-23T09:30:38Z",
+  "generatedAt": "2026-10-24T09:26:16Z",
   "windowDays": 30,
   "groups": [
+    {
+      "label": "paultyng",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-10-24T00:07:38Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 1,
+          "url": null
+        }
+      ]
+    },
     {
       "label": "trunk'd",
       "kind": "repo",
@@ -40,12 +54,12 @@
         {
           "kind": "prs",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-23&type=pullrequests&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-24&type=pullrequests&s=updated&o=desc"
         },
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-23&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-24&type=issues&s=updated&o=desc"
         },
         {
           "kind": "commits",
