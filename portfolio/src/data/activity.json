@@ -1,55 +1,41 @@
 {
-  "generatedAt": "2026-10-25T09:26:26Z",
+  "generatedAt": "2026-10-26T09:41:29Z",
   "windowDays": 30,
   "groups": [
-    {
-      "label": "AlexxIT",
-      "kind": "org",
-      "private": false,
-      "url": null,
-      "lastAt": "2026-10-24T16:13:13Z",
-      "counts": [
-        {
-          "kind": "prs",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-25&type=pullrequests&s=updated&o=desc"
-        },
-        {
-          "kind": "issues",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-25&type=issues&s=updated&o=desc"
-        },
-        {
-          "kind": "commits",
-          "n": 27,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "paultyng",
-      "kind": "org",
-      "private": false,
-      "url": null,
-      "lastAt": "2026-10-24T00:07:38Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 1,
-          "url": null
-        }
-      ]
-    },
     {
       "label": "trunk'd",
       "kind": "repo",
       "private": true,
       "url": null,
-      "lastAt": "2026-10-21T12:18:22Z",
+      "lastAt": "2026-10-25T19:31:57Z",
       "counts": [
         {
           "kind": "commits",
-          "n": 55,
+          "n": 80,
+          "url": null
+        }
+      ]
+    },
+    {
+      "label": "AlexxIT",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-10-25T17:13:41Z",
+      "counts": [
+        {
+          "kind": "prs",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-26&type=pullrequests&s=updated&o=desc"
+        },
+        {
+          "kind": "issues",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-26&type=issues&s=updated&o=desc"
+        },
+        {
+          "kind": "commits",
+          "n": 29,
           "url": null
         }
       ]
@@ -59,7 +45,35 @@
       "kind": "repo",
       "private": false,
       "url": "https://github.com/dnesting/sense-exporter",
-      "lastAt": "2026-10-05T21:07:43Z",
+      "lastAt": "2026-10-25T14:03:23Z",
+      "counts": [
+        {
+          "kind": "commits",
+          "n": 2,
+          "url": null
+        }
+      ]
+    },
+    {
+      "label": "torsday",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-10-25T14:02:12Z",
+      "counts": [
+        {
+          "kind": "issues",
+          "n": 2,
+          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-26&type=issues&s=updated&o=desc"
+        }
+      ]
+    },
+    {
+      "label": "paultyng",
+      "kind": "org",
+      "private": false,
+      "url": null,
+      "lastAt": "2026-10-24T00:07:38Z",
       "counts": [
         {
           "kind": "commits",
