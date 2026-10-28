@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T09:32:02Z",
+  "generatedAt": "2026-10-28T09:23:26Z",
   "windowDays": 30,
   "groups": [
     {
@@ -7,11 +7,11 @@
       "kind": "repo",
       "private": true,
       "url": null,
-      "lastAt": "2026-10-26T20:43:32Z",
+      "lastAt": "2026-10-27T17:16:18Z",
       "counts": [
         {
           "kind": "commits",
-          "n": 91,
+          "n": 96,
           "url": null
         }
       ]
@@ -24,18 +24,8 @@
       "lastAt": "2026-10-25T17:13:41Z",
       "counts": [
         {
-          "kind": "prs",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Apr%20created%3A%3E%3D2026-09-27&type=pullrequests&s=updated&o=desc"
-        },
-        {
-          "kind": "issues",
-          "n": 2,
-          "url": "https://github.com/search?q=org%3AAlexxIT%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-27&type=issues&s=updated&o=desc"
-        },
-        {
           "kind": "commits",
-          "n": 20,
+          "n": 6,
           "url": null
         }
       ]
@@ -64,7 +54,7 @@
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-27&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-28&type=issues&s=updated&o=desc"
         }
       ]
     },
@@ -74,20 +64,6 @@
       "private": false,
       "url": null,
       "lastAt": "2026-10-24T00:07:38Z",
-      "counts": [
-        {
-          "kind": "commits",
-          "n": 1,
-          "url": null
-        }
-      ]
-    },
-    {
-      "label": "sense",
-      "kind": "repo",
-      "private": false,
-      "url": "https://github.com/dnesting/sense",
-      "lastAt": "2026-09-27T07:00:00Z",
       "counts": [
         {
           "kind": "commits",
