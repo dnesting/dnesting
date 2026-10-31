@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:23:18Z",
+  "generatedAt": "2026-10-31T09:19:46Z",
   "windowDays": 30,
   "groups": [
     {
@@ -11,7 +11,7 @@
       "counts": [
         {
           "kind": "commits",
-          "n": 98,
+          "n": 97,
           "url": null
         }
       ]
@@ -54,7 +54,7 @@
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-09-30&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-10-01&type=issues&s=updated&o=desc"
         }
       ]
     },
