@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:21:24Z",
+  "generatedAt": "2026-11-14T09:19:26Z",
   "windowDays": 30,
   "groups": [
     {
@@ -54,7 +54,7 @@
         {
           "kind": "issues",
           "n": 2,
-          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-10-14&type=issues&s=updated&o=desc"
+          "url": "https://github.com/search?q=org%3Atorsday%20author%3Adnesting%20is%3Aissue%20created%3A%3E%3D2026-10-15&type=issues&s=updated&o=desc"
         }
       ]
     },
