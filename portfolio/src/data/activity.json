@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T09:22:01Z",
+  "generatedAt": "2026-11-26T09:21:51Z",
   "windowDays": 30,
   "groups": [
     {
@@ -11,7 +11,7 @@
       "counts": [
         {
           "kind": "commits",
-          "n": 29,
+          "n": 18,
           "url": null
         }
       ]
