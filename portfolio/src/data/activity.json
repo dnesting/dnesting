@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T09:21:22Z",
+  "generatedAt": "2026-11-28T09:20:01Z",
   "windowDays": 30,
   "groups": [
     {
@@ -7,11 +7,11 @@
       "kind": "repo",
       "private": true,
       "url": null,
-      "lastAt": "2026-11-23T18:20:44Z",
+      "lastAt": "2026-11-27T22:12:55Z",
       "counts": [
         {
           "kind": "commits",
-          "n": 13,
+          "n": 22,
           "url": null
         }
       ]
